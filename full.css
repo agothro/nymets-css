@@ -1,0 +1,2414 @@
+/* This is a mess -- Agothro */
+
+/* and it's all agothro's fault! NEVER FORGET! ;-) ..seriously thanks for the hand though!*/
+
+/*BOOM*/
+a[href="/boom"]:after { content: url(%%boom%%) }
+
+/*=======SIDE BAR IMAGE SIDE=========*/
+/* This is to change the image. Same as always just know the size of your image, insert it, and edit the the height. Easiest way is to make the image 280px wide and edit the height.  */
+.side:before {
+    content: "";
+    height: 357px;
+    width: 280px;
+    display: block;
+    background: url(%%headline%%)no-repeat;
+   border: 1px solid #054ea4;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    box-shadow: none;
+    margin-left: 10px;
+margin-bottom: 10px;
+margin-top:10px;
+}
+
+div.side div.spacer:nth-of-type(1):before{
+    display:block;
+    margin-top:10px;
+    width:280px;
+    content:"Extra, extra, read all about it.";
+    padding:0px 0 5px;
+    text-align:center; /*delete this line if you no longer want the text centered*/
+} 
+
+.side .spacer:first-child:before {
+    font-weight: bold;
+    font-size: 10px;
+    text-shadow: -1px -1px 0px #fff, -1px 1px 0px #fff, 1px -1px 0px #fff, 1px 1px 0px #fff;
+    color: #000000;
+    content:"";
+    display: block;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 15px 
+}
+
+
+.linkflair-Nats .linkflairlabel {
+    background: url(%%Teamsprite%%) no-repeat 0px -1848px;
+    min-width: 22px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 30px;
+}
+
+.linkflair-Braves .linkflairlabel {
+    background: url(%%Teamsprite%%) no-repeat 0px -64px;
+    min-width: 22px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 30px;
+}
+
+.linkflair-Marlins .linkflairlabel {
+    background: url(%%Teamsprite%%) no-repeat 0px -896px;
+    min-width: 22px;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 30px;
+}
+
+/*select link flair*/
+.post-submitter .flat-list .flairselectbtn:before {
+position:absolute;
+background: #fff;
+color:#054ea4;
+padding:2px;
+content: "^ Please tag this with the proper flair category.";
+margin-top:15px;
+z-index:9999;
+    box-shadow: 3px 3px 8px #888;
+    border-radius: 4px;
+border: 2px solid #054ea4;
+}
+.post-submitter .link.self .text.self .flat-list .flairselectbtn:before, .post-submitter .link.linkflair .flat-list .flairselectbtn:before {
+display: none;
+}
+*/
+
+/*COUNTDOWN TO 90*/
+/*   Updated on 7/25   */
+
+/*.titlebox h1 a {
+text-indent: -9999em;
+
+
+    display: block;
+    height: 536px;
+    background: url(%%countdown11%%) no-repeat center;
+
+}
+*/
+/* Stickies */
+
+.stickied {
+    
+    border: 2px #0c569f solid !important;
+    color: #000;
+    box-shadow: none;
+    border-radius: 8px;
+padding-top: 10px;
+margin-top: 4px;
+}
+
+
+.stickied .title  {
+margin-right: 5px;
+    color: #002C77 !important; 
+}
+
+.stickied .title:visited {
+    color: #002C77 !important;
+}
+.stickied-tagline {
+    color:#000 !important;
+    font-weight: bold;
+}
+
+.stickied a {
+    color: #000 !important; 
+}
+
+
+/*=================Spacing============*/
+div.content{
+margin-right: 0px;
+}
+
+
+
+.content {
+background-color: #fff;
+height: 100% !important;
+}
+
+div.side {
+    margin-right:15px;
+}
+
+body.listing-page div.content,
+body.comments-page div.content {
+    padding-left: 6px!important;
+    padding-right: 10px!important;
+    overflow: hidden;
+    }
+
+
+/* buttons */
+.btn, button, .side a[href*='/#btn'] {
+    background-color: #990841;
+    background: -webkit-linear-gradient(bottom,#32329C,#295C8F);
+    background: -moz-linear-gradient(bottom,#32329C,#295C8F);
+    background: -ms-linear-gradient(bottom,#32329C,#295C8F);
+    background: -o-linear-gradient(bottom,#32329C,#295C8F);
+    border:none;
+    color:#FFF;
+    text-shadow: 1px 1px 1px #0E0E66;
+    padding:6px;
+    margin:5px 5px 5px 0;
+    cursor:pointer;
+    font-size:13px;
+    font-family:arial,helvetica,sans-serif;
+    -moz-border-radius:2px;
+    -webkit-border-radius:2px;
+    -o-border-radius:2px;
+    -ms-border-radius:2px;
+    -khtml-border-radius:2px;
+    border-radius:2px;
+    box-shadow: 2px 1px 3px #888!important;
+    transition:all .4s ease;
+}
+
+.btn:hover, button:hover, .side a[href*='/#btn']:hover {
+    background-color: #990841;
+    background: -webkit-linear-gradient(bottom,#2A2A87,#15385C,#0C2742);
+    background: -moz-linear-gradient(bottom,#2A2A87,#15385C,#0C2742);
+    background: -ms-linear-gradient(bottom,#2A2A87,#15385C,#0C2742);
+    background: -o-linear-gradient(bottom,#2A2A87,#15385C,#0C2742);
+    border:none;
+    color:#FFF;
+    text-shadow: 1px 1px 1px #0E0E66;
+    padding:6px;
+    cursor:pointer;
+    font-size:13px;
+    font-family:arial,helvetica,sans-serif;
+    -moz-border-radius:2px;
+    -webkit-border-radius:2px;
+    -o-border-radius:2px;
+    -ms-border-radius:2px;
+    -khtml-border-radius:2px;
+    border-radius:2px;
+    box-shadow: 2px 1px 3px transparent!important;
+   transition:all .4s ease;
+}
+
+.RESBigEditorPop {color: #ED7D05!important;
+text-shadow: 1px 1px 1px transparent!important;
+}
+body.res-nightmode .btn, body.res-nightmode button,
+body.res-nightmode .side a[href*='/#btn']
+ { color: #444 !important; background-color: #000 !important; }
+.btn a { 
+color:#FFF!important; }
+body.res-nightmode .btn a { 
+color: #444 !important; }
+.btn:hover,button:hover,.side a[href*='/#btn']:hover 
+{ background-color:#56a6f7; border-color:#56a6f7;
+ }
+body.res-nightmode .btn:hover, body.res-nightmode button:hover,
+body.res-nightmode .side a[href*='/#btn']:hover { 
+background-color:#DDD !important; border-color:#DDD; }
+
+/*Flair page*/
+.side a[href="http://newyorkmetsflairbot.tumblr.com/"] { 
+display: inline-block; 
+width: 260px; 
+height: 40px; 
+background: url(%%gyfh%%);
+border: 1px solid #FB4F14; 
+position: relative;
+left: 10px;
+border-radius: 10px;
+box-shadow: none;
+margin-bottom: 12px;
+transition:all .3s ease; }
+
+.side a[href="http://newyorkmetsflairbot.tumblr.com/"]:hover { 
+display: inline-block; 
+width: 260px; 
+height: 40px; 
+border: 1px solid #002C77;
+background: url(%%gyfh%%); 
+position: relative;
+left: 10px;
+border-radius: 10px;
+box-shadow: none; 
+margin-bottom: 12px;
+transition:all .3s ease;}
+
+/* ================================================ HEADER TEAM POPOUT MENU (credit: /u/SGMD1, /u/gavin19, and /r/detroitlions) */
+.side h6 + ul {
+    list-style-type: none;
+    position: absolute;
+    top: 50px;
+    right: 115px;
+    z-index: 99;
+    margin: 0px 2px;
+    padding: 4em 0 3em 3em;
+    }
+.side h6 + ul li {
+    display: block;
+    }
+.side h6 + ul li ~ li {
+    display:none;
+border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    }
+.side h6 + ul li:first-child {
+    position: absolute;
+    right: -85px;
+
+    }
+.side h6 + ul li:first-child a {
+    display: block;
+    height: 35px;
+    width: 62px;
+    background: transparent url(%%rbaseballout%%) no-repeat 0 0px;
+    box-shadow: none;
+margin-right: 30px;
+transition:all .1s ease;
+    }
+.side h6 + ul li:first-child a:hover {
+    background: transparent url(%%rbaseballin%%) no-repeat 0 0px;
+    box-shadow: none;;
+transition:all .1s ease;
+    }
+.side h6 + ul li a[href="/r/baseball"]:before {
+    content: normal;
+    }
+.side .md h6 + ul li:first-child:hover ~ li,
+.side .md h6 + ul:hover li:not(:first-child) { 
+    display:block;
+background: #ddd;
+    background: -moz-linear-gradient(bottom,#B2B2B2,#fff);
+    background: -webkit-linear-gradient(bottom,#B2B2B2,#fff);
+    background: -o-linear-gradient(bottom,#B2B2B2,#fff);
+    background: -ms-linear-gradient(bottom,#B2B2B2,#fff);
+    background: linear-gradient(bottom,#B2B2B2,#fff);
+    color: transparent!important;
+    padding-right: 12px;
+    padding-bottom: 10px;
+    position: relative;
+    bottom: 28px;
+    left: 16px;
+    border: 1px solid #BF5C19;
+    box-shadow: 2px 2px 0px #B84A00;
+    }
+
+.side .md h6 + ul:hover li:hover:not(:first-child) { 
+    display:block;
+background: #ddd;
+    background: -moz-linear-gradient(bottom,#fff,#fff);
+    background: -webkit-linear-gradient(bottom,#fff,#fff);
+    background: -o-linear-gradient(bottom,#fff,#fff);
+    background: -ms-linear-gradient(bottom,#fff,#fff);
+    background: linear-gradient(bottom,#fff,#fff);
+    color: transparent!important;
+    padding-right: 12px;
+    padding-bottom: 10px;
+    position: relative;
+    bottom: 28px;
+    left: 16px;
+    border: 1px solid #BF5C19;
+    box-shadow: 2px 2px 0px #B84A00;
+    }
+.side h6 + ul li a {
+    display: inline-block;
+    width: 20px;
+    height: 15px;
+    line-height: 20px;
+    margin: 3px 3px;
+    padding-top: 3px;
+    }
+
+
+
+/*"This post submitted..." box*/
+.linkinfo {
+    border: 2px solid #054ea4;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    background: #fff;
+    box-shadow: 5px 5px 5px #888;
+	color: #054ea4!important;
+}
+
+/*res selector*/
+.res .RES-keyNav-activeElement,
+.res .commentarea .RES-keyNav-activeElement .md,
+.res .commentarea .RES-keyNav-activeElement.entry .noncollapsed {
+background-color: transparent!important;
+}
+
+
+/*replace expandos*/
+
+.expando-button {
+    width:23px !important; 
+    height:23px !important; 
+    background:url(%%RESexpando%%) !important;
+margin: 4px;
+transition:0s all !important;
+border-radius: 4px;
+}
+
+.expando-button.selftext {
+background:url(%%expando-self%%) !important;
+}
+
+.expando-button.selftext.collapsed, 
+.expando-button.video.collapsed, 
+.expando-button.image.collapsedExpando, 
+.expando-button.image.gallery.collapsedExpando {
+
+    background-position: 0 -99px !important;
+border-radius: 4px;
+box-shadow: 1px 2px 2px #888;
+transition:0s all !important;
+}
+
+
+.expando-button.selftext.collapsed:hover, 
+.expando-button.video.collapsed:hover, 
+.expando-button.image.collapsedExpando:hover, 
+.expando-button.image.gallery.collapsedExpando:hover {
+
+    background-position: 0 -66px !important;
+box-shadow: 1px 2px 2px transparent;
+transition:0s all !important;
+}
+
+
+.expando-button.selftext.expanded, 
+.expando-button.video.expanded, 
+.expando-button.image.expanded, 
+.expando-button.image.gallery.expanded {
+
+    background-position: 0 -33px !important;
+border-radius: 4px;
+box-shadow: 1px 2px 2px #888;
+transition:0s all !important;
+}
+
+
+.expando-button.selftext.expanded:hover, 
+.expando-button.video.expanded:hover, 
+.expando-button.image.expanded:hover, 
+.expando-button.image.gallery.expanded:hover {
+
+    background-position: 0 0px !important;
+box-shadow: 1px 2px 2px transparent;
+transition:0s all !important;
+} 
+
+/*FONTS===============================*/
+div.content #siteTable div.link div.entry p.title a.title {
+    color: #E65C00
+  text-shadow: -1px -1px 0 transparent, -1px 1px 0 transparent, 1px -1px 0 transparent, 1px 1px 0 transparent, 2px 2px 4px transparent!important;
+transition:.3s all ease;
+    }
+
+a.title:hover {
+  text-shadow: -1px -1px 0 #fff, -1px 1px 0 #fff, 1px -1px 0 #fff, 1px 1px 0 #fff, 2px 2px 4px #888!important;
+transition:.3s all ease;
+    }
+
+a:visited, a:active, div.content #siteTable div.link div.entry p.title a.title:visited, div.content #siteTable div.link div.entry p.title a.title:active {
+    color: #474780;
+  text-shadow: -1px -1px 0 transparent, -1px 1px 0 transparent, 1px -1px 0 transparent, 1px 1px 0 transparent, 2px 2px 4px transparent!important;
+transition:.3s all ease;
+    }
+a.title:visited { color: #474780!important; 
+  text-shadow: -1px -1px 0 transparent, -1px 1px 0 transparent, 1px -1px 0 transparent, 1px 1px 0 transparent, 2px 2px 4px transparent!important;
+transition:.3s all ease;
+}
+
+a.title{ color: #E65C00!important; 
+  text-shadow: -1px -1px 0 transparent, -1px 1px 0 transparent, 1px -1px 0 transparent, 1px 1px 0 transparent, 2px 2px 4px transparent!important;
+transition:.3s all ease;
+}
+
+div.side a:hover{
+    color: #E65C00;
+    }
+.entry .buttons li a { color: #000066; }
+
+.comment .md a {
+color:#E65C00;
+font-weight: bold;
+font-size: small;
+/*  text-shadow: -1px -1px 0 #fff, -1px 1px 0 #fff, 1px -1px 0 #fff, 1px 1px 0 #fff;*/
+}
+.comment .md a:hover {
+  text-shadow: -1px -1px 0 transparent, -1px 1px 0 transparent, 1px -1px 0 transparent, 1px 1px 0 transparent, 2px 2px 4px transparent!important;
+transition:.3s all ease;
+}
+
+
+strong { color: #3A5D9E!important;
+text-shadow: 1px 1px 1px #B3B3B3;
+}
+
+.side strong { color: #19334D!important;
+  text-shadow: -1px -1px 0px #fff, 1px -1px 0px #fff, -1px 1px 0px #fff, 1px 1px 0px #fff;
+}
+
+/*mod colors*/
+
+
+.thing .author[href$="/xmarcs"],.thing .author[href$="/three_dee"], .thing .author[href$="/JeremyEye"], .thing .author[href$="/manatwo"], .thing .author[href$="/m4tuna"], .thing .author[href$="/edmank"], .thing .author[href$="/NightmareSyx"], .thing .author[href$="/nward21"]{ 
+color: #E65C00!important;
+padding:3px;
+  font-size: larger!important;
+  font-weight: bold!important;
+ }
+
+/* authors */
+
+.tagline .author:not(.submitter):not(.moderator):not(.stickied):not(.friend) {
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff!important;
+color: #254B95;
+}
+
+.tagline .author:hover:not(.submitter):not(.moderator):not(.friend) {
+color: #000080;
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff!important;
+}
+
+.author.friend {
+color: #000080!important;
+background: transparent!important;
+
+}
+
+.author.submitter {
+    color: white;
+    background: #1B1E80;  
+    padding-top: 1.5px;
+   padding-bottom: 1.5px;
+   padding-left: 4px;
+   padding-right: 4px;
+    border: 1px solid #00297A;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;  
+box-shadow: 2px 2px 4px #888!important;
+    }
+
+.author.submitter:hover {
+    color: orange;
+    background: #3F44E8;  
+    padding-top: 1.5px;
+   padding-bottom: 1.5px;
+   padding-left: 4px;
+   padding-right: 4px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;  
+box-shadow: 2px 2px 4px #888!important;
+text-decoration: none;
+    }
+
+.entry .tagline .moderator {
+
+color: #FF9900!important;
+}
+
+.tagline .author:hover:not(.submitter) {
+
+color: #000080;
+}
+
+.res .thing .tagline .author.submitter {
+    color: white!important;
+    text-shadow: 1px 1px #888;
+    background: orange!important;  
+    padding-top: 1.5px;
+   padding-bottom: 1.5px;
+   padding-left: 4px;
+   padding-right: 4px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;  
+box-shadow: 2px 2px 4px #888;
+   border: 2px solid #fff;
+ }
+
+ .comment .tagline { color: #00297A!important; }
+.res_comment .score{ color: #00297A!important}
+.res_comment_downs { color:#00297A!important}
+
+
+/* CSS common to both rows of stickies */
+.titlebox .usertext-body .md ol li a {
+    background-color: none;
+    border: none;
+    color: #FFFFFF;
+    font-size: x-small;
+    font-weight: lighter;
+    padding: 0 1px 0 0;
+    text-decoration: none;
+}
+
+.titlebox form {
+    position: static;
+}
+.titlebox .usertext-body .md ol {
+    display: inline;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: 225;
+}
+.titlebox .usertext-body .md ol li {
+    display: inline;
+    margin: 0 0 0 0;
+}
+.titlebox .usertext-body .md ol {
+    height: 5px;
+    margin: 0 auto;
+    right: 3px;
+    top: 21px;
+}
+.titlebox .usertext-body .md ol ~ ol {
+    left: 151px;
+    top: 51px;
+}
+
+.titlebox .usertext-body .md ol li a {
+    background-color: #191919;
+    border: 1px solid #FFF;
+    color: #FFFFFF;
+    font-size: smaller;
+    font-weight: lighter;
+    padding: 1px;
+margin:1px;
+    text-decoration: none;
+}
+.titlebox .usertext-body .md ol li a:hover {
+    border-color: #FFFFFF;
+    color: #555;
+}
+.titlebox form {
+    position: static;
+}
+.titlebox .usertext-body .md ol {
+    display: inline;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: 225;
+}
+.titlebox .usertext-body .md ol li {
+float: left;
+    display: inline;
+    margin: 0 0 0 0;
+}
+.titlebox .usertext-body .md ol {
+ display: inline;
+    height: 5px;
+    margin: 0 auto;
+    right: 3px;
+    top: 21px;
+}
+.titlebox .usertext-body .md ol ~ ol {
+    left: 151px;
+    top: 51px;
+}
+
+
+
+/* ============================================SCREENSAVER HOVER MENU=================================================*/
+.side .titlebox .md h3 + ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 3px;
+transition:all 1s ease;
+background: transparent!important;
+    }
+.md { overflow: visible; }
+.titlebox .md h3, .titlebox .md h3 a, .titlebox h1, .titlebox h1 a, .titlebox .md h2, .titlebox .md h2 a, .titlebox .md h4, .titlebox .md h4 a {
+    color: #fff !important; font-size:14px;font-family:Arial;
+
+    }
+.sidecontentbox a.helplink {
+    margin-right: 5px;
+    }
+.icon-menu a {
+    background: transparent!important;
+    }
+.titlebox .md h3 + ul {
+    display: none;
+transition:all .3s ease;
+    }
+.titlebox .md h3:hover + ul, .titlebox .md ul:hover {
+    display: block;
+    }
+.titlebox .md ul li:hover {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    }
+
+
+.titlebox .md h3 {
+background: #E66916;
+    background: -moz-linear-gradient(bottom,#B24700,#E66916);
+    background: -webkit-linear-gradient(bottom,#B24700,#E66916);
+    background: -o-linear-gradient(bottom,#B24700,#E66916);
+    background: -ms-linear-gradient(bottom,#B24700,#E66916);
+    background: linear-gradient(bottom,#B24700,#E66916);
+    width: 282px!important;
+    height: 26px;
+    line-height: 26px;
+    font-weight: normal;
+    font-size: 14px;
+    padding-left: 14px;
+    margin-top: 4px;
+margin-left: -12px;
+border: 1px solid #660000;
+    }
+.titlebox .md h3:after!important{
+    margin-bottom: 10px;}
+.titlebox .md h3:before { 
+content: "+ ";
+font-weight:bold;
+font-size:large;
+ color: #fff!important; 
+padding-right: 0px; 
+text-shadow:1px 1px #00256E}
+/*================================================TOP RES BAR SR HEADER: MY SUBREDDITS====================================*/
+
+.RESDropdownList,
+.res #RESSearchMenuItem,
+.res #RESPrefsDropdown{z-index:40000!important;
+border-color:gray!important}
+.res .RESDropdownList li{border-color:white!important}
+.res .RESDropdownList li,.res .RESDropdownList li a{background:#0C4176!important;;color: #fff!important}
+.res .RESDropdownList li:hover,.res .RESDropdownList li:hover a{background:#fff!important;color:#fff!important}
+.res #sr-header-area .RESShortcutsCurrentSub { color: #FF9933 !important; }
+
+
+.dropdown.srdrop .selected{background-image:none} 
+.dropdown.srdrop .selected:after{content:"▼"} 
+.sr-bar .separator{color:#e5e5e5}
+sr-header-area .drop-choices.srdrop a{color:#fff}
+.drop-choices{z-index:10000000;padding:10px;
+background:rgba(12,65,118,0.92)!important;
+border:1px solid #fff;
+border-radius:1px;
+color:#BA5919;
+text-align:left;
+font-size:10px;
+font-family:Arial,sans-serif} 
+.drop-choices a{color:#fff} 
+.drop-choices a.choice:hover{background-color: #C16A30;color:#fff!important}
+a#sr-more-link {background: #4A0000;
+border-left: 1px solid #fff;
+border-right: 1px solid #fff;
+}
+
+/* 0c4176 proper blue*/
+#RESShortcutsEditContainer,
+#RESShortcutsRight,
+#RESShortcutsLeft,
+#RESShortcutsAdd,
+#RESShortcutsTrash,
+#RESShortcutsSort{
+color:#fff!important;
+background-color: rgba(0,0,0,0)!important;
+text-shadow:1px 1px grey}
+
+
+#srList tr{border:none!important;padding:1px!important;
+padding:1px!important;background:rgba(12,65,118,0.97)!important}
+#srList tr:hover{background:rgba(193,106,48,.95)!important}
+#srList{BOX-SHADOW:0 6px 30px 5px #000!important;
+border: 5px solid rgba(193,106,48,0.87)!important;
+margin:1%;background-color:transparent!important}
+#srList tr a{color: white!important}
+#srList {color: #CCC!important}
+
+#srList tr a:hover{color:darkgrey!important}
+.sortAsc,.sortDesc{display:none!important}
+#srList thead{background:rgba(211,211,211,0.8)!important}
+
+
+
+/*====================================================TOP HEADER BAR============================================================*/
+/*old blue 16203A*/
+sr-more-link{position:absolute;
+z-index:10000000;
+background-color: #000;
+color:#fff!important;}
+.dropdown.srdrop .selected{color: orange}
+
+#srdrop {opacity:1;
+color:#fff!important;;
+z-index:10000000;
+}
+
+
+
+#sr-header-area {
+    background-color: #BA5919;
+/*    background: -webkit-linear-gradient(bottom,#BA5919,#F07422);
+    background: -moz-linear-gradient(bottom,#BA5919,#0052A3);
+    background: -ms-linear-gradient(bottom,#BA5919,#0052A3);
+    background: -o-linear-gradient(bottom,#BA5919,#0052A3);*/
+opacity:1;
+z-index:100000000000;
+transition:all .3s ease;
+border-bottom: 1px solid #ccc;
+}
+
+
+
+#sr-header-area:hover{opacity:1;
+    background: #C16A30;
+border-bottom: 2px solid #fff;
+box-shadow: 0px 2px 2px 0px #ddd;
+transition:all .3s ease
+}
+
+
+
+
+#sr-header-area a {
+    color: white!important;
+text-shadow:1px 1px grey;
+}
+#sr-header-area a:hover {
+    color: #0c4176;
+    text-decoration: none;
+z-index:10000000
+}
+
+#sr-header-area a:selected {
+    color: #FF9933;
+}
+
+
+/*=========================Sidebar Button Changes ======================*/
+       /*Search bar*/
+.side form#search {
+    position: relative;
+    z-index: 9999;
+
+    }
+
+#search input[type=submit]{
+ display: none;
+}
+
+#search input[type="text"]{
+    background: #ebebeb none repeat-x scroll center left;
+    font-weight: bold!important;
+    text-shadow: #ddd .5px .5px 0px!important;
+  border: 1px solid #e6e6e6;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    display: block;
+    position: relative;
+    text-align: center;
+    }
+
+
+       /*Search bar expanded during click*/
+#searchexpando {
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border: 2px solid #0b579e;
+    background-color: #FFF
+    }
+
+.morelink, .morelink:hover {
+    background: #0b569e none repeat-x scroll center left;
+    border: 2px solid #ec791f;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    display: block;
+    position: relative;
+    text-align: center;
+    box-shadow: none;
+transition:all .2s ease;
+}
+
+.morelink:hover{
+   background: #ec791f none repeat-x scroll center left;
+    border: 2px solid #0b569e !important;
+    border-radius: 10px;
+color: #fff;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    display: block;
+    position: relative;
+    text-align: center;
+    box-shadow: none;
+transition:all .2s ease;
+}
+
+.morelink a {
+    color: #fff !important;
+    font-weight: bold!important;
+    text-shadow: none;
+}
+.morelink:hover a {
+    color: #fff!important;
+    font-weight: bold!important;
+    text-shadow: none;
+}
+.morelink .nub {
+    display: none;
+}
+
+.side .md table {
+	border-collapse:separate;
+/*	border-spacing: 0;*/ 
+    box-shadow: 2px 2px 3px #fff;
+	-webkit-box-shadow: 2px 2px 2px #fff;
+	-moz-box-shadow: 2px 2px 2px #fff;
+    margin-top: 3px;
+    margin-bottom: 20px;
+    width: 95%}
+.side .md table th {
+    background-color: #8B141A;
+    border-top: none ;
+    border-left: none;
+    border-bottom: 2px solid #fff;
+    border-right: 1px solid #fff;
+    color: white;
+    font-size: 110%;
+    font-weight: bold;
+    padding: .5em;
+    text-align: center;
+    text-shadow: none;
+}
+.side .md table td {
+    border-top: 1px solid transparent;
+    border-left: 1px solid transparent;
+    border-bottom: none;
+    border-right: 1px solid transparent;
+    padding: .6em;
+    vertical-align: top;
+}
+
+
+/*Submission page and flair dropdown*/
+/*flair selection menu*/
+.flairselector h2 {
+    background-color: #00297C;
+border: 2px solid #E68A00;
+    color: #fff;
+    box-shadow: 5px 5px 5px #888;
+}
+
+.flairselector {
+background:rgba(186,186,186,.86)!important;
+font-size:smaller;
+color:000;
+    box-shadow: 5px 5px 5px #888;
+}
+
+.submit .tabmenu li a {
+    background: #fff;
+    border: 2px solid #002C77;
+    color: #002C77;
+padding: 10px;
+    display: inline-block;
+    box-shadow: none;
+
+}
+
+.submit .tabmenu .selected a {
+color: #fff;
+padding: 10px;
+background: #002C77;
+    border: 3px solid #E68A00;
+    box-shadow: none;
+}
+
+.formtabs-content {
+    border-top: 0px solid #324A74;
+    margin-top: 23px;;
+    }
+
+
+.roundfield { background-color: #fff; 
+border: 2px solid #054ea4;
+    box-shadow: none;}
+
+#link-desc, #text-desc { 
+background-color: #fff; 
+border: 2px solid #054ea4;
+    box-shadow: none;}
+
+.submit .roundfield.info-notice { background-color: #fff; 
+border: 2px solid #054ea4;
+    box-shadow: none;
+}
+
+
+/*NEW BACKGROUND*/
+body {
+    background: url(%%Metsfabrictall%%) repeat fixed center center;
+    padding: 0px 55px 0px 42px;
+width:95%;
+    }
+
+/*Header Image*/
+#header {
+/*this is the header image background (the blue one) don't change this*/
+background-repeat: repeat;
+background-position: bottom center;
+height: 161px;
+border: 0;
+    box-shadow: 0px 3px 0px #888;
+font-family: Georgia,serif;
+font-size: 12px;
+padding-bottom: 6px;
+background-color: #004685;
+/*border-bottom: 10px solid #E65C00;*/
+}
+
+
+/*Add white color for bottom right of header*/
+#header-bottom-right { 
+background:rgba(255,255,255,0.77)!important;
+border-bottom: 1px solid #054ea4;
+border-left: 1px solid #054ea4;
+border-top: none
+position:relative;
+z-index: 1;
+bottom: 155px;
+    -webkit-border-top-left-radius: 0px;
+    -moz-border-top-left-radius: 0px;
+    -webkit-border-bottom-left-radius: 7px;
+    -moz-border-bottom-left-radius: 7px;
+   box-shadow: none;
+}
+
+#header-bottom-right a {
+margin-left: 4px;
+color: #303096!important;
+} 
+
+
+
+/*CONTENT*/
+
+#sr-more-link {
+    display: none
+    }
+div.content {
+    margin-right: 10px;
+    padding-left: 5px
+    }
+
+
+
+/*=======================================Header logo transition=========================================================*/
+
+
+#header-img-a {
+    display: inline-block;
+    background: url(%%sheaneondark%%);
+position:absolute;
+top:20px;
+left: 60px;
+    height: 145px;
+    width: 120px;
+transition:all .8s ease;
+}
+#header-img-a:hover {
+    background: url(%%sheaneonbright%%) no-repeat;
+transition:all .8s ease;
+}
+
+#header-img {
+    display: none;
+}
+
+/*=================================Typeface in header to replace pagename=================================================*/
+
+
+
+
+
+.pagename a {
+    background: url(%%Mets-type-before%%) no-repeat;
+position: absolute;
+top: 45px;
+left: 300px;
+    display: inline-block;
+    width: 462px!important;
+    height: 136px!important;
+    font-size: 0!important;
+transition:all .8s ease;
+}
+
+.pagename a:hover {
+    background: url(%%Mets-type-after%%) no-repeat;
+position: absolute;
+top: 45px;
+left: 300px;
+    display: inline-block;
+    width: 462px!important;
+    height: 136px!important;
+    font-size: 0!important;
+transition:all .8s ease;
+}
+
+/*=======================================New header image==============================================================*/
+#header {
+    background: url(%%newmetsbackground%%);
+background-position: bottom center;
+
+    box-shadow: none;
+height: 186px;
+margin-left: 5px;
+width:100%;
+border:0;
+transition:all .2s ease;
+}
+/*======================================Tab Menu==============================================================*/
+
+.flair-settings + .tabmenu li a {
+position: relative;
+left:5px
+top: 300px
+}
+
+
+#header .tabmenu{display:block;
+position:absolute;
+top:165px;
+margin:0px;
+right:0px;
+left:0px;
+padding:0px;
+height:44px;
+background-color:transparent;
+border-bottom:0px solid;
+color:#999;
+list-style-type:none;
+vertical-align:bottom;
+text-align:center;
+white-space:nowrap;
+font-weight:normal;
+}
+
+
+
+#header .tabmenu .selected{
+text-shadow:none;}
+
+
+.tabmenu li{display:inline-block;
+margin:7px 0px 0px 0px}
+/*spacing:change # below*/
+.tabmenu li a{margin:0px 31px 0px 31px;
+padding:8px 0px 13px 0px;
+color: #fff;
+background-color:transparent;
+border:0px solid;color:#999;
+font-weight:normal;
+font-size:14px;font-family:Arial}
+
+.tabmenu li a:hover{color:#C16A30;text-decoration:none;text-shadow:none;}
+.tabmenu li.selected a{z-index:100;
+background-color:transparent;
+border:0px solid;
+color:#054ea4;
+font-weight: bold;
+font-size:14px;
+font-family:Arial
+text-shadow: none;
+}
+
+
+/*SIDEBAR==================================================================================*/
+
+
+div.titlebox span.word {
+    display: none
+    color: #054ea4!important; 
+    }
+div.titlebox span.number:after {
+    content: " Met Fans"
+    color: #054ea4!important; 
+    }
+
+
+/*Side Menu*/
+.sidecontentbox {
+    background-color: #fff;
+    padding: 2px;
+    border: 2px solid #054ea4;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px
+    box-shadow: none;
+	
+    }
+.sidecontentbox h1 {
+    color: #444;
+    font-size: small;
+    text-transform: none
+box-shadow:  none;
+    }
+.sidecontentbox ul.content {
+    border: 0
+    }
+.sidecontentbox ul.content li {
+    font-size: x-small;
+    margin-bottom: 2px
+    }
+.icon-menu a {
+    background-color: transparent
+    }
+.sidebar, .side, .div.sidebar, .div sidebar {
+    }
+.titlebox {
+    padding: 10px;
+    background-color: #fff;
+    border: 2px solid #054ea4;
+
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px
+    box-shadow: 5px 5px 5px #737884;
+	-moz-box-shadow: 5px 5px 5px #737884;
+	-webkit-box-shadow: 5px 5px 5px #737884;
+    }
+.titlebox .bottom {
+    border: 0
+    }
+.titlebox form.toggle {
+    background-color: transparent
+    }
+.titlebox .usertext {
+    margin: 15px 0;
+    line-height: 120%;
+    font-size: x-small
+    }
+.titlebox .usertext .md {
+    margin: 0;
+    padding: 0;
+    overflow: visible
+    box-shadow: 5px 5px 5px #888;
+    }
+.titlebox .usertext .md h2 {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #000
+    }
+.titlebox .usertext .md > h1 {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    background-color: #a30000;
+    color: white;
+    padding: 5px 10px;
+    padding-left: 20px;
+    padding-right: 0;
+    margin-right: 20px;
+    margin-left: -18px;
+    border-bottom: 1px solid #a33333;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    z-index: 100
+    }
+.titlebox .usertext .md h2 {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: black
+    }
+.titlebox .usertext .md > h1 {
+    border: none;
+    border-bottom: 1px solid #a33333;
+    background-color: #a30000;
+    color: #fff;
+    padding: 5px 0 5px 20px;
+    margin: 10px 13px 5px -18px;
+    z-index: 100;
+    }
+
+.comment {
+    overflow: hidden;
+    }
+
+
+
+/*UPVOTE/DOWNVOTE==================================================================================*/
+ .arrow.up { 
+  background-image: url(%%upapple%%); 
+  background-position: 0px 0px; 
+  height: 33px; width: 34px;  
+margin-bottom: 5px!important;
+ }
+.midcol { width: 35px !important; }
+.content .midcol,.content .commentarea .comment {overflow:visible !important;margin-bottom:10px;}
+.arrow.upmod { 
+    width: 34px;
+    height: 33px;
+    background-image:url(%%appleanimation%%);
+    background-repeat: no-repeat; 
+    background-position: 0px 0px;
+    overflow: visible;
+    position: relative;
+margin-bottom: 5px!important;
+    -webkit-animation: upvote 3.2s steps(26) forwards;
+       -moz-animation: upvote 3.2s steps(26) forwards;
+        -ms-animation: upvote 3.2s steps(26) forwards;
+         -o-animation: upvote 3.2s steps(26) forwards;
+            animation: upvote 3.2s steps(26) forwards;
+    }
+
+@-webkit-keyframes upvote {
+  from { background-position: 0px 0px }
+  to { background-position: -884px 0px }
+}
+
+@-moz-keyframes upvote {
+  from { background-position: 0px 0px }
+  to { background-position: -884px 0px }
+}
+
+@-ms-keyframes upvote {
+  from { background-position: 0px 0px }
+  to { background-position: -884px 0px }
+}
+
+@-o-keyframes upvote {
+  from { background-position: 0px 0px }
+  to { background-position: -884px 0px }
+}
+
+@keyframes upvote {
+  from { background-position: 0px 0px }
+  to { background-position: -884px 0px }
+}
+
+ .arrow.down { 
+margin-top:3px!important;
+  background-image: url(%%Metsdownfade%%); 
+  background-position: -1px 0px; 
+  height: 33px; width: 30px; 
+ }
+.midcol { width: 35px !important; }
+.content .midcol,.content .commentarea .comment {overflow:visible !important}
+.arrow.downmod { 
+margin-top:3px!important;
+    width: 30px;
+    height: 33px;
+    background-image:url(%%metsdown%%);
+    background-repeat: no-repeat; 
+    background-position: 0px 0px;
+    overflow: visible;
+    position: relative;
+    right: 1px;
+    -webkit-animation: downvote 3s steps(24) forwards;
+       -moz-animation: downvote 3s steps(24) forwards;
+        -ms-animation: downvote 3s steps(24) forwards;
+         -o-animation: downvote 3s steps(24) forwards;
+            animation: downvote 3s steps(24) forwards;
+    }
+
+@-webkit-keyframes downvote {
+  from { background-position: 0px 0px }
+  to { background-position: -720px 0px }
+}
+
+@-moz-keyframes downvote {
+  from { background-position: 0px 0px }
+  to { background-position: -720px 0px }
+}
+
+@-ms-keyframes downvote {
+  from { background-position: 0px 0px }
+  to { background-position: -720px 0px }
+}
+
+@-o-keyframes downvote {
+  from { background-position: 0px 0px }
+  to { background-position: -720px 0px }
+}
+
+@keyframes downvote {
+  from { background-position: 0px 0px }
+  to { background-position: -720px 0px }
+}
+/*=========================================================*/
+/*Table from /r/rockets*/
+
+.md table {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ffffff;
+  border-left: 2px solid #054ea4;
+  border-right: 2px solid #054ea4;
+  border-top: 2px solid #054ea4;
+  border-bottom: 2px solid #054ea4;
+  box-shadow: 2px 2px 2px #E65C00;
+  margin-top: 1px;
+  margin-bottom: 20px
+}
+.md table th {
+  background: -webkit-linear-gradient(bottom, #0f2d49,#124f8b);
+  background: -moz-linear-gradient(bottom,#0f2d49,#124f8b);
+  background: -ms-linear-gradient(bottom,#0f2d49,#124f8b);
+  background: -o-linear-gradient(bottom,#0f2d49,#124f8b);
+  border-top: 2px solid #323232;
+  border-left: 2px solid #323232;
+  border-bottom: 2px solid #323232;
+  border-right: 1px solid #323232;
+  color: #FFF;
+  font-size: 109%;
+  font-weight: bold;
+  height: 9px;
+  text-align: center;
+  vertical-align: middle !important
+}
+
+.md table strong{
+color: #002C77 !important;
+text-shadow: none;}
+
+.side .md table th {
+  background: -webkit-linear-gradient(bottom, #FF6600,#FF9900);
+  background: -moz-linear-gradient(bottom,#FF6600,#FF9900);
+  background: -ms-linear-gradient(bottom,#FF6600,#FF9900);
+  background: -o-linear-gradient(bottom,#FF6600,#FF9900);
+  border-top: 2px solid #323232;
+  border-left: 2px solid #323232;
+  border-bottom: 2px solid #323232;
+  border-right: 1px solid #323232;
+  color: #FFF;
+  font-size: 109%;
+  font-weight: bold;
+  height: 9px;
+  text-align: center;
+  vertical-align: middle !important;
+
+}
+
+.side .md table strong{
+color: #26396E!important;
+text-shadow: 0px 0px 0px transparent!important}
+
+
+.md table td {
+  border-top: 1px solid #d4d4d4;
+  border-left: 1px solid #d4d4d4;
+  border-bottom: 1px solid #d4d4d4;
+  border-right: 1px solid #d4d4d4;
+  color: #054ea4;
+  height: 16px;
+  font-size: 109%;
+  vertical-align: middle !important
+}
+
+.side .md table {  box-shadow: 4px 4px 5px #888!important;}
+
+/*SIDEBAR FLAIR ==============*/
+.side a[href^="#flair-"]{
+    color: #555;
+    font-size: 19px;
+    cursor: default;}
+
+
+a[href$="/LGARI"]:before, a[href$="/r/azdiamondbacks"]:before,
+a[href="/LGATL"]:before, a[href$="/r/Braves"]:before,
+a[href="/LGBAL"]:before, a[href$="/r/Orioles"]:before,
+a[href="/LGBOS"]:before, a[href$="/r/RedSox"]:before,
+a[href="/LGLAA"]:before, a[href$="/r/AngelsBaseball"]:before,
+a[href="/LGCHC"]:before, a[href$="/r/Cubs"]:before,
+a[href="/LGCHW"]:before, a[href$="/r/WhiteSox"]:before,
+a[href="/LGCIN"]:before, a[href$="/r/Reds"]:before,
+a[href="/LGCLE"]:before, a[href$="/r/WahoosTipi"]:before,
+a[href="/LGCOL"]:before, a[href$="/r/ColoradoRockies"]:before,
+a[href="/LGDET"]:before, a[href$="/r/MotorCityKitties"]:before,
+a[href="/LGHOU"]:before, a[href$="/r/Astros"]:before,
+a[href="/LGKCR"]:before, a[href$="/r/KCRoyals"]:before,
+a[href="/LGLAD"]:before, a[href$="/r/Dodgers"]:before,
+a[href="/LGMIA"]:before, a[href$="/r/letsgofish"]:before,
+a[href="/LGMIL"]:before, a[href$="/r/Brewers"]:before,
+a[href="/LGMIN"]:before, a[href$="/r/MinnesotaTwins"]:before,
+a[href="/LGNYM"]:before, a[href$="/r/NewYorkMets"]:before,
+a[href="/LGNYY"]:before, a[href$="/r/NYYankees"]:before,
+a[href="/LGOAK"]:before, a[href$="/r/OaklandAthletics"]:before,
+a[href="/LGPHI"]:before, a[href$="/r/Phillies"]:before,
+a[href="/LGPIT"]:before, a[href$="/r/Buccos"]:before,
+a[href="/LGSDP"]:before, a[href$="/r/Padres"]:before,
+a[href="/LGSEA"]:before, a[href$="/r/Mariners"]:before,
+a[href="/LGSF"]:before, a[href$="/r/SFGiants"]:before,
+a[href="/LGSTL"]:before, a[href$="/r/Cardinals"]:before,
+a[href="/LGTBR"]:before, a[href$="/r/TampaBayRays"]:before,
+a[href="/LGTEX"]:before, a[href$="/r/TexasRangers"]:before,
+a[href="/LGTOR"]:before, a[href$="/r/TorontoBlueJays"]:before,
+a[href="/LGWAS"]:before, a[href$="/r/Nationals"]:before,
+a[href="/LGMLB"]:before
+    {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-image: url(%%Teamsprite%%);
+    background-position: -9999px -9999px;
+    vertical-align: middle;
+    margin-right: 1px;
+    content: "";
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px #888;
+    }
+a[href="/LGARI"]:before, a[href$="/r/azdiamondbacks"]:before, .flair-LGARI{ background-position: 0px 0px; width: 25px; height: 21px;  } 
+a[href="/LGARI"]:hover:before, a[href$="/r/azdiamondbacks"]:hover:before, .flair-LGARI{ background-position: 0px -32px; width: 25px; height: 21px;
+box-shadow: 0px 0px 0px #fff;  }
+
+a[href="/LGATL"]:before, a[href$="/r/Braves"]:before, .flair-LGATL{ background-position: 0px -64px; width: 25px; height: 21px;} 
+a[href="/LGATL"]:hover:before, a[href$="/r/Braves"]:hover:before, .flair-LGATLin { background-position: 0px -96px; width: 25px; height: 21px;
+box-shadow: 0px 0px 0px #fff;} 
+
+a[href="/LGBAL"]:before, a[href$="/r/Orioles"]:before, .flair-LGBAL{  background-position: 0px -128px; width: 25px; height: 21px;} 
+a[href="/LGBAL"]:hover:before, a[href$="/r/Orioles"]:hover:before, .flair-LGBAL{  background-position: 0px -160px; width: 25px; height: 21px;
+box-shadow: 0px 0px 0px #fff; }
+
+
+a[href="/LGBOS"]:before, a[href$="/r/RedSox"]:before, .flair-LGBOS{  background-position: 0px -192px; width: width: 25px; height: 21px; } 
+a[href="/LGBOS"]:hover:before, a[href$="/r/RedSox"]:hover:before, .flair-LGBOS{  background-position: 0px -224px; width: 25px; height: 21px;
+box-shadow: 0px 0px 0px #fff; } 
+
+a[href="/LGCHC"]:before, a[href$="/r/Cubs"]:before, .flair-LGCHC{ background-position: 0px -256px; width: 25px; height: 21px; } 
+a[href="/LGCHC"]:hover:before, a[href$="/r/Cubs"]:hover:before, .flair-LGCHC{ background-position: 0px -288px; width: 25px; height: 21px; 
+box-shadow: 0px 0px 0px #fff;} 
+
+a[href="/LGCHW"]:before, a[href$="/r/WhiteSox"]:before, .flair-LGCHW{ background-position: 0px -320px; width: 25px; height: 21px; } 
+a[href="/LGCHW"]:hover:before, a[href$="/r/WhiteSox"]:hover:before, .flair-LGCHW{ background-position: 0px -352px; width: 25px; height: 21px;  
+box-shadow: 0px 0px 0px #fff;} 
+
+a[href="/LGCIN"]:before, a[href$="/r/Reds"]:before, .flair-LGCIN{ background-position: 0px -384px; width: 25px; height: 21px; } 
+a[href="/LGCIN"]:hover:before, a[href$="/r/Reds"]:hover:before, .flair-LGCIN{ background-position: 0px -416px; width: 25px; height: 21px;
+box-shadow: 0px 0px 0px #fff; } 
+
+a[href="/LGCLE"]:before, a[href$="/r/WahoosTipi"]:before, .flair-LGCLE{ background-position: 0px -448px; width: width: 25px; height: 21px; } 
+a[href="/LGCLE"]:hover:before, a[href$="/r/WahoosTipi"]:hover:before, .flair-LGCLE{ background-position: 0px -480px; width: 25px; height: 21px;
+ box-shadow: 0px 0px 0px #fff;} 
+
+a[href="/LGCOL"]:before, a[href$="/r/ColoradoRockies"]:before,.flair-LGCOL{  background-position: 0px -512px; width: 25px; height: 21px; } 
+a[href="/LGCOL"]:hover:before, a[href$="/r/ColoradoRockies"]:hover:before,.flair-LGCOL{  background-position: 0px -544px; width: 25px; height: 21px;
+box-shadow: 0px 0px 0px #fff; } 
+
+a[href="/LGDET"]:before, a[href$="/r/MotorCityKitties"]:before, .flair-LGDET{ background-position: 0px -576px; width: 25px; height: 21px; } 
+a[href="/LGDET"]:hover:before, a[href$="/r/MotorCityKitties"]:hover:before, .flair-LGDET{ background-position: 0px -608px; width: 25px; height: 21px;
+box-shadow: 0px 0px 0px #fff; } 
+
+a[href="/LGHOU"]:before, a[href$="/r/Astros"]:before, .flair-LGHOU{ background-position: 0px -640px; width: 25px; height: 21px; }
+a[href="/LGHOU"]:hover:before, a[href$="/r/Astros"]:hover:before, .flair-LGHOU{ background-position: 0px -672px; width: 25px; height: 21px;
+box-shadow: 0px 0px 0px #fff; }
+
+a[href="/LGKCR"]:before, a[href$="/r/KCRoyals"]:before,.flair-LGKCR{ background-position: 0px -704px; width: 25px; height: 21px; } 
+a[href="/LGKCR"]:hover:before, a[href$="/r/KCRoyals"]:hover:before,.flair-LGKCR{ background-position: 0px -736px; width: 25px; height: 21px; 
+box-shadow: 0px 0px 0px #fff;} 
+
+a[href="/LGLAA"]:before, a[href$="/r/AngelsBaseball"]:before, .flair-LGLAA{ background-position: 0px -768px; width: 25px; height: 21px;  } 
+a[href="/LGLAA"]:hover:before, a[href$="/r/AngelsBaseball"]:hover:before, .flair-LGLAA{ background-position: 0px -800px; width: 25px; height: 21px; 
+box-shadow: 0px 0px 0px #fff;  } 
+
+a[href="/LGLAD"]:before, a[href$="/r/Dodgers"]:before, .flair-LGLAD{  background-position: 0px -832px; width: 25px; height: 21px; } 
+a[href="/LGLAD"]:hover:before, a[href$="/r/Dodgers"]:hover:before, .flair-LGLAD{  background-position: 0px -864px; width: 25px; height: 21px; 
+box-shadow: 0px 0px 0px #fff;} 
+
+a[href="/LGMIA"]:before, a[href$="/r/letsgofish"]:before, .flair-LGMIA{ background-position: 0px -896px; width: 25px; height: 21px;  } 
+a[href="/LGMIA"]:hover:before, a[href$="/r/letsgofish"]:hover:before, .flair-LGMIA{ background-position: 0px -928px; width: 25px; height: 21px; 
+box-shadow: 0px 0px 0px #fff; } 
+
+a[href="/LGMIL"]:before, a[href$="/r/Brewers"]:before, .flair-LGMIL{ background-position: 0px -960px; width: 25px; height: 21px;  } 
+a[href="/LGMIL"]:hover:before, a[href$="/r/Brewers"]:hover:before, .flair-LGMIL{ background-position: 0px -992px; width: 25px; height: 21px;  
+box-shadow: 0px 0px 0px #fff; } 
+
+a[href="/LGMIN"]:before, a[href$="/r/MinnesotaTwins"]:before, .flair-LGMIN{ background-position: 0px -1024px; width: 25px; height: 21px; } 
+a[href="/LGMIN"]:hover:before, a[href$="/r/MinnesotaTwins"]:hover:before, .flair-LGMIN{ background-position: 0px -1056px; width: 25px; height: 21px; 
+box-shadow: 0px 0px 0px #fff; } 
+
+a[href="/LGMLB"]:before, a[href$="/r/baseball"]:before, .flair-LGMLB{ background-position: 0 -1275px; width: 25px; height: 21px; } 
+a[href="/LGMLB"]:hover:before, a[href$="/r/baseball"]:hover:before, .flair-LGMLB{ background-position: 0 -1307px; width: 25px; height: 21px; 
+box-shadow: 0px 0px 0px #fff; } 
+
+a[href="/LGNYM"]:before, a[href$="/r/NewYorkMets"]:before, .flair-LGNYM{ background-position: 0px -1088px; width: 25px; height: 21px; } 
+a[href="/LGNYM"]:hover:before, a[href$="/r/NewYorkMets"]:hover:before, .flair-LGNYM{ background-position: 0px -1120px; width: 25px; height: 21px; 
+box-shadow: 0px 0px 0px #fff; } 
+
+a[href="/LGNYY"]:before, a[href$="/r/NYYankees"]:before, .flair-LGNYY{ background-position: 0px -1152px; width: 25px; height: 21px;} 
+a[href="/LGNYY"]:hover:before, a[href$="/r/NYYankees"]:hover:before, .flair-LGNYY{ background-position: 0px -1184px; width: 25px; height: 21px;
+box-shadow: 0px 0px 0px #fff; } 
+
+a[href="/LGOAK"]:before, a[href$="/r/OaklandAthletics"]:before, .flair-LGOAK{ background-position: 0px -1216px; width: 25px; height: 21px;  } 
+a[href="/LGOAK"]:hover:before, a[href$="/r/OaklandAthletics"]:hover:before, .flair-LGOAK{ background-position: 0px -1248px; width: 25px; height: 21px;  
+box-shadow: 0px 0px 0px #fff; } 
+
+a[href="/LGPHI"]:before, a[href$="/r/Phillies"]:before, .flair-LGPHI{ background-position: 0px -1280px; width: 25px; height: 21px;  } 
+a[href="/LGPHI"]:hover:before, a[href$="/r/Phillies"]:hover:before, .flair-LGPHI{ background-position: 0px -1312px; width: 25px; height: 21px;  
+box-shadow: 0px 0px 0px #fff; }
+ 
+a[href="/LGPIT"]:before, a[href$="/r/Buccos"]:before,.flair-LGPIT{ background-position: 0px -1344px; width: 25px; height: 21px;   } 
+a[href="/LGPIT"]:hover:before, a[href$="/r/Buccos"]:hover:before,.flair-LGPIT{ background-position: 0px -1376px; width: 25px; height: 21px;   
+box-shadow: 0px 0px 0px #fff; } 
+a[href="/LGSDP"]:before, a[href$="/r/Padres"]:before, .flair-LGSDP{ background-position: 0px -1408px; width: 25px; height: 21px; } 
+a[href="/LGSDP"]:hover:before, a[href$="/r/Padres"]:hover:before, .flair-LGSDP{ background-position: 0px -1440px; width: 25px; height: 21px; 
+box-shadow: 0px 0px 0px #fff; }
+ 
+a[href="/LGSEA"]:before, a[href$="/r/Mariners"]:before, .flair-LGSEA{ background-position: 0px -1472px; width: 25px; height: 21px; } 
+a[href="/LGSEA"]:hover:before, a[href$="/r/Mariners"]:hover:before, .flair-LGSEA{ background-position: 0px -1504px; width: 25px; height: 21px; 
+box-shadow: 0px 0px 0px #fff; }
+
+a[href="/LGSF"]:before, a[href$="/r/SFGiants"]:before, .flair-LGSFG{ background-position: 0px -1536px; width: 25px; height: 21px;} 
+a[href="/LGSF"]:hover:before, a[href$="/r/SFGiants"]:hover:before, .flair-LGSFG{ background-position: 0px -1568px; width: 25px; height: 21px;
+box-shadow: 0px 0px 0px #fff; }
+ 
+a[href="/LGSTL"]:before, a[href$="/r/Cardinals"]:before, .flair-LGSTL{ background-position: 0px -1600px; width: 25px; height: 21px;  } 
+a[href="/LGSTL"]:hover:before, a[href$="/r/Cardinals"]:hover:before, .flair-LGSTL{ background-position: 0px -1632px; width: 25px; height: 21px; 
+box-shadow: 0px 0px 0px #fff;  } 
+
+a[href="/LGTBR"]:before, a[href$="/r/TampaBayRays"]:before, .flair-LGTBR{  background-position: 0px -1664px; width: 25px; height: 21px;  } 
+a[href="/LGTBR"]:hover:before, a[href$="/r/TampaBayRays"]:hover:before, .flair-LGTBR{  background-position: 0px -1696px; width: 25px; height: 21px;  
+box-shadow: 0px 0px 0px #fff; } 
+
+a[href="/LGTEX"]:before, a[href$="/r/TexasRangers"]:before, .flair-LGTEX{ background-position: 0px -1728px; width: 25px; height: 21px;  } 
+a[href="/LGTEX"]:hover:before, a[href$="/r/TexasRangers"]:hover:before, .flair-LGTEX{ background-position: 0px -1760px; width: 25px; height: 21px; 
+box-shadow: 0px 0px 0px #fff;  } 
+
+a[href="/LGTOR"]:before, a[href$="/r/TorontoBlueJays"]:before, .flair-LGTOR{ background-position: 0px -1792px; width: 25px; height: 21px; } 
+a[href="/LGTOR"]:hover:before, a[href$="/r/TorontoBlueJays"]:hover:before, .flair-LGTOR{ background-position: 0px -1824px; width: 25px; height: 21px; 
+box-shadow: 0px 0px 0px #fff; }
+
+a[href="/LGWAS"]:before, a[href$="/r/Nationals"]:before, .flair-LGWAS{ background-position: 0px -1856px; width: 25px; height: 21px; } 
+a[href="/LGWAS"]:hover:before, a[href$="/r/Nationals"]:hover:before, .flair-LGWAS{ background-position: 0px -1888px; width: 25px; height: 21px; 
+box-shadow: 0px 0px 0px #fff; } 
+
+ a[href="/LGMLB"]:before {
+    min-width: 30px;
+    height: 25px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url(%%spritesheet1%%);
+    vertical-align: middle;
+    margin-right: 1px;
+    content: ""
+    }
+
+/* Sidebar calendar styles, by /u/Fustrate */
+.side table:nth-of-type(1) td,
+.side table:nth-of-type(2) td {
+    padding: 0;
+    text-align: center;
+    position: relative;
+    vertical-align: top!important; 
+    }
+.side table:nth-of-type(2) td:nth-child(1) {
+    text-align: left;
+    }
+.side table:nth-of-type(1) td sup {
+    display: block;
+    text-align: left;
+    padding: 2px;
+
+    }
+.side table:nth-of-type(1) td em,
+.side table:nth-of-type(1) td strong {
+    font-weight: normal;
+    font-style: normal;
+    display: block;
+    padding: 0 0 4px;
+    text-align: center;
+    border: 1px solid #004081;
+    border-radius: 4px;
+    box-shadow: 1px 1px 2px #888;
+    }
+/* Away games */
+.side table:nth-of-type(1) td strong {
+    background: #dadada;
+    border-radius: 4px;
+    }
+.side table:nth-of-type(1) td a {
+    border-radius: 3px;
+    display: block;
+
+    line-height: 50px;
+    margin: 0 auto;
+    padding: 0;
+    }
+.side table:nth-of-type(1) td a[title^="Won"] {
+    background-color: #87c96a;
+    box-shadow: 0 0 9px green;
+    }
+.side table:nth-of-type(1) td a[title^="Lost"] {
+    background-color: #e08484;
+    box-shadow: 0 0 9px red;
+    }
+.side table:nth-of-type(4) + p {
+    text-align: center;
+    }
+
+
+/* TEAM FLAIR====================================*/
+
+.flair:before { 
+content: ""; 
+display: inline-block;
+background-repeat: no-repeat;
+background-image: url(%%metsnumberedflair%%);
+vertical-align: middle;  
+margin-right:8px;
+margin-left:8px;
+}
+
+.flair { 
+display: inline-block;
+min-width: 55px;
+line-height: 10px;
+height: 44px;
+overflow: hidden;
+vertical-align: middle;
+white-space: nowrap;
+font-size: larger;
+font-weight: bold;
+color: #E65C00;
+padding: 1px;
+margin-right: 3px;
+border-width: 0; 
+border: 0px; 
+background-color: transparent; 
+width: auto!important;
+ text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+
+} 
+
+
+
+.flair-101:before { background-position: 0 -2358px; width: 27px; height: 40px;  } 
+.flair-102:before { background-position: 0 -2408px; width: 26px; height: 40px;  } 
+.flair-103:before { background-position: 0 -2458px; width: 30px; height: 40px;  } 
+.flair-104:before { background-position: 0 -2508px; width: 36px; height: 40px;  } 
+.flair-105:before { background-position: 0 -2558px; width: 26px; height: 39px;  } 
+.flair-106:before { background-position: 0 -2607px; width: 29px; height: 40px;  } 
+.flair-107:before { background-position: 0 -2657px; width: 29px; height: 38px;  } 
+.flair-108:before { background-position: 0 -2705px; width: 27px; height: 39px;  } 
+.flair-109:before { background-position: 0 -2754px; width: 28px; height: 38px;  } 
+.flair-110:before { background-position: 0 -2802px; width: 25px; height: 40px;  } 
+.flair-111:before { background-position: 0 -2852px; width: 30px; height: 40px;  } 
+.flair-112:before { background-position: 0 -2902px; width: 25px; height: 39px;  } 
+.flair-114:before { background-position: 0 -3001px; width: 40px; height: 40px;  } 
+.flair-115:before { background-position: 0 -3051px; width: 29px; height: 38px;  } 
+.flair-116:before { background-position: 0 -3099px; width: 29px; height: 38px;  } 
+.flair-117:before { background-position: 0 -3147px; width: 30px; height: 40px;  } 
+.flair-118:before { background-position: 0 -3197px; width: 26px; height: 39px;  } 
+.flair-201:before { background-position: 0 -3246px; width: 18px; height: 40px;  } 
+.flair-202:before { background-position: 0 -3296px; width: 79px; height: 33px;  } 
+.flair-203:before { background-position: 0 -3339px; width: 24px; height: 40px;  } 
+.flair-204:before { background-position: 0 -3389px; width: 29px; height: 40px;  } 
+.flair-205:before { background-position: 0 -3439px; width: 13px; height: 40px;  } 
+.flair-206:before { background-position: 0 -3489px; width: 41px; height: 40px;  } 
+.flair-207:before { background-position: 0 -3539px; width: 41px; height: 28px;  } 
+.flair-208:before { background-position: 0 -3577px; width: 22px; height: 30px;  } 
+.flair-209:before { background-position: 0 -3617px; width: 30px; height: 40px;  } 
+.flair-210:before { background-position: 0 -3667px; width: 33px; height: 40px;  } 
+.flair-251:before { background-position: 0 -3717px; width: 28px; height: 37px;  } 
+.flair-252:before { background-position: 0 -3764px; width: 32px; height: 37px;  } 
+.flair-253:before { background-position: 0 -3811px; width: 53px; height: 40px;  } 
+.flair-254:before { background-position: 0 -3861px; width: 34px; height: 40px;  } 
+.flair-255:before { background-position: 0 -3911px; width: 25px; height: 40px;  } 
+.flair-259:before { background-position: 0 -4111px; width: 31px; height: 40px;  } 
+.flair-260:before { background-position: 0 -4161px; width: 34px; height: 38px;  } 
+.flair-261:before { background-position: 0 -4209px; width: 24px; height: 38px;  } 
+.flair-262:before { background-position: 0 -4257px; width: 32px; height: 40px;  } 
+.flair-263:before { background-position: 0 -4307px; width: 31px; height: 40px;  } 
+.flair-401:before { background-position: 0 -4357px; width: 30px; height: 40px;  } 
+.flair-402:before { background-position: 0 -4407px; width: 26px; height: 40px;  } 
+.flair-403:before { background-position: 0 -4457px; width: 26px; height: 40px;  } 
+.flair-404:before { background-position: 0 -4507px; width: 43px; height: 40px;  } 
+.flair-405:before { background-position: 0 -4557px; width: 25px; height: 40px;  } 
+.flair-406:before { background-position: 0 -4607px; width: 32px; height: 40px;  } 
+.flair-407:before { background-position: 0 -4657px; width: 36px; height: 40px;  } 
+.flair-408:before { background-position: 0 -4707px; width: 32px; height: 40px;  } 
+.flair-409:before { background-position: 0 -4757px; width: 19px; height: 40px;  } 
+.flair-410:before { background-position: 0 -4807px; width: 38px; height: 40px;  } 
+.flair-411:before { background-position: 0 -4857px; width: 26px; height: 40px;  } 
+.flair-412:before { background-position: 0 -4907px; width: 23px; height: 40px;  } 
+.flair-413:before { background-position: 0 -4957px; width: 30px; height: 40px;  } 
+.flair-414:before { background-position: 0 -5007px; width: 29px; height: 40px;  } 
+.flair-415:before { background-position: 0 -5057px; width: 36px; height: 40px;  } 
+.flair-416:before { background-position: 0 -5107px; width: 26px; height: 40px;  } 
+.flair-501:before { background-position: 0 -5157px; width: 36px; height: 40px;  } 
+.flair-502:before { background-position: 0 -5207px; width: 40px; height: 40px;  } 
+.flair-503:before { background-position: 0 -5257px; width: 31px; height: 40px;  } 
+.flair-504:before { background-position: 0 -5307px; width: 41px; height: 39px;  } 
+.flair-505:before { background-position: 0 -5356px; width: 33px; height: 39px;  } 
+.flair-506:before { background-position: 0 -5405px; width: 88px; height: 40px;  } 
+.flair-507:before { background-position: 0 -5455px; width: 34px; height: 37px;  } 
+.flair-508:before { background-position: 0 -5502px; width: 35px; height: 40px;  } 
+.flair-509:before { background-position: 0 -5552px; width: 39px; height: 40px;  } 
+.flair-510:before { background-position: 0 -5602px; width: 34px; height: 40px;  } 
+.flair-511:before { background-position: 0 -5652px; width: 25px; height: 40px;  } 
+.flair-512:before { background-position: 0 -5702px; width: 26px; height: 40px;  } 
+.flair-513:before { background-position: 0 -5752px; width: 60px; height: 40px;  } 
+.flair-514:before { background-position: 0 -5802px; width: 29px; height: 40px;  } 
+.flair-601:before { background-position: 0 -5852px; width: 31px; height: 40px;  } 
+.flair-602:before { background-position: 0 -5902px; width: 32px; height: 40px;  } 
+.flair-603:before { background-position: 0 -5952px; width: 32px; height: 40px;  } 
+.flair-604:before { background-position: 0 -6002px; width: 31px; height: 40px;  } 
+.flair-605:before { background-position: 0 -6052px; width: 33px; height: 40px;  } 
+.flair-606:before { background-position: 0 -6102px; width: 32px; height: 40px;  } 
+.flair-607:before { background-position: 0 -6152px; width: 18px; height: 26px;  } 
+.flair-608:before { background-position: 0 -6188px; width: 30px; height: 25px;  } 
+.flair-609:before { background-position: 0 -6223px; width: 41px; height: 22px;  } 
+.flair-610:before { background-position: 0 -6255px; width: 45px; height: 24px;  } 
+.flair-611:before { background-position: 0 -6289px; width: 45px; height: 24px;  } 
+.flair-612:before { background-position: 0 -6323px; width: 30px; height: 30px;  } 
+.flair-613:before { background-position: 0 -6363px; width: 29px; height: 30px;  } 
+.flair-614:before { background-position: 0 -6403px; width: 19px; height: 32px;  } 
+.flair-615:before { background-position: 0 -6445px; width: 25px; height: 26px;  } 
+.flair-616:before { background-position: 0 -6481px; width: 31px; height: 27px;  } 
+.flair-617:before { background-position: 0 -6518px; width: 30px; height: 25px;  } 
+.flair-618:before { background-position: 0 -6553px; width: 57px; height: 14px;  } 
+.flair-619:before { background-position: 0 -6577px; width: 34px; height: 30px;  } 
+.flair-620:before { background-position: 0 -6617px; width: 40px; height: 40px;  } 
+.flair-621:before { background-position: 0 -6667px; width: 160px; height: 22px;  } 
+.flair-team1:before { background-position: 0 -6699px; width: 26px; height: 22px;  } 
+.flair-team2:before { background-position: 0 -6731px; width: 28px; height: 22px;  } 
+.flair-team3:before { background-position: 0 -6763px; width: 28px; height: 22px;  } 
+.flair-team4:before { background-position: 0 -6795px; width: 26px; height: 22px;  } 
+.flair-team5:before { background-position: 0 -6827px; width: 26px; height: 22px;  } 
+.flair-team6:before { background-position: 0 -6859px; width: 26px; height: 22px;  } 
+.flair-team7:before { background-position: 0 -6891px; width: 26px; height: 22px;  } 
+.flair-team8:before { background-position: 0 -6923px; width: 26px; height: 22px;  } 
+.flair-team9:before { background-position: 0 -6955px; width: 26px; height: 22px;  } 
+.flair-team10:before { background-position: 0 -6987px; width: 26px; height: 22px;  } 
+.flair-team11:before { background-position: 0 -7019px; width: 27px; height: 22px;  } 
+.flair-team12:before { background-position: 0 -7051px; width: 26px; height: 22px;  } 
+.flair-team13:before { background-position: 0 -7083px; width: 26px; height: 22px;  } 
+.flair-team14:before { background-position: 0 -7115px; width: 28px; height: 22px;  } 
+.flair-team15:before { background-position: 0 -7147px; width: 26px; height: 22px;  } 
+.flair-team16:before { background-position: 0 -7179px; width: 26px; height: 22px;  } 
+.flair-team17:before { background-position: 0 -7211px; width: 26px; height: 22px;  } 
+.flair-team18:before { background-position: 0 -7243px; width: 26px; height: 22px;  } 
+.flair-team19:before { background-position: 0 -7275px; width: 26px; height: 22px;  } 
+.flair-team20:before { background-position: 0 -7307px; width: 26px; height: 22px;  } 
+.flair-team21:before { background-position: 0 -7339px; width: 26px; height: 22px;  } 
+.flair-team22:before { background-position: 0 -7371px; width: 26px; height: 22px;  } 
+.flair-team23:before { background-position: 0 -7403px; width: 26px; height: 22px;  } 
+.flair-team24:before { background-position: 0 -7435px; width: 26px; height: 22px;  } 
+.flair-team25:before { background-position: 0 -7467px; width: 26px; height: 22px;  } 
+.flair-team26:before { background-position: 0 -7499px; width: 26px; height: 22px;  } 
+.flair-team27:before { background-position: 0 -7531px; width: 26px; height: 22px;  } 
+.flair-team28:before { background-position: 0 -7563px; width: 26px; height: 22px;  } 
+.flair-team29:before { background-position: 0 -7595px; width: 28px; height: 22px;  } 
+.flair-team30:before { background-position: 0 -7627px; width: 26px; height: 22px;  }
+
+
+ /* TEAM FLAIR 2====================================*/
+
+.flair[class*="flair-SS2-"]:before{ 
+content: ""; 
+    background-image: url(%%metsnumberedflair2%%);
+    background-repeat: no-repeat;
+vertical-align: middle;  
+margin-right:8px;
+margin-left:8px;
+display: inline-block;
+}
+
+.flair-SS2-1119:before { background-position: 0 0px; width: 34px; height: 40px;  } 
+.flair-SS2-1264:before { background-position: 0 -50px; width: 32px; height: 40px;  } 
+.flair-SS2-1265:before { background-position: 0px -100px; width: 29px; height: 40px;  } 
+.flair-SS2-1266:before { background-position: 0px -150px; width: 63px; height: 40px;  } 
+.flair-SS2-1267:before { background-position: 0px -200px; width: 23px; height: 40px;  } 
+.flair-SS2-1268:before { background-position: 0px -250px; width: 57px; height: 40px;  } 
+.flair-SS2-1269:before { background-position: 0px -300px; width: 69px; height: 40px;  } 
+.flair-SS2-1270:before { background-position: 0px -350px; width: 29px; height: 40px;  } 
+.flair-SS2-1271:before { background-position: 0px -400px; width: 27px; height: 40px;  } 
+.flair-SS2-1272:before { background-position: 0px -450px; width: 27px; height: 40px;  } 
+.flair-SS2-1273:before { background-position: 0px -500px; width: 28px; height: 40px;  } 
+.flair-SS2-1274:before { background-position: 0px -550px; width: 26px; height: 40px;  } 
+.flair-SS2-1275:before { background-position: 0px -600px; width: 88px; height: 40px;  } 
+.flair-SS2-1276:before { background-position: 0px -650px; width: 27px; height: 40px;  } 
+.flair-SS2-1277:before { background-position: 0px -700px; width: 29px; height: 40px;  } 
+.flair-SS2-1418:before { background-position: 0px -750px; width: 28px; height: 40px;  } 
+.flair-SS2-1419:before { background-position: 0px -800px; width: 29px; height: 40px;  } 
+.flair-SS2-1420:before { background-position: 0px -850px; width: 28px; height: 40px;  } 
+.flair-SS2-1421:before { background-position: 0px -900px; width: 32px; height: 40px;  } 
+.flair-SS2-1422:before { background-position: 0px -950px; width: 33px; height: 40px;  } 
+.flair-SS2-1423:before { background-position: 0px -1000px; width: 29px; height: 40px;  } 
+.flair-SS2-1424:before { background-position: 0px -1050px; width: 54px; height: 40px;  } 
+.flair-SS2-1425:before { background-position: 0px -1100px; width: 32px; height: 40px;  } 
+.flair-SS2-1426:before { background-position: 0px -1150px; width: 29px; height: 40px;  } 
+.flair-SS2-1427:before { background-position: 0px -1200px; width: 29px; height: 40px;  } 
+.flair-SS2-1515:before { background-position: 0px -1250px; width: 60px; height: 40px;  } 
+.flair-SS2-1516:before { background-position: 0px -1300px; width: 35px; height: 40px;  } 
+.flair-SS2-1517:before { background-position: 0px -1350px; width: 55px; height: 40px;  } 
+.flair-SS2-1518:before { background-position: 0px -1400px; width: 38px; height: 40px;  } 
+.flair-SS2-1519:before { background-position: 0px -1450px; width: 36px; height: 40px;  } 
+.flair-SS2-1520:before { background-position: 0px -1500px; width: 37px; height: 40px;  } 
+.flair-SS2-1622:before { background-position: 0px -1550px; width: 37px; height: 40px;  } 
+.flair-SS2-1623:before { background-position: 0px -1600px; width: 31px; height: 40px;  } 
+.flair-SS2-1624:before { background-position: 0px -1650px; width: 39px; height: 40px;  } 
+.flair-SS2-1625:before { background-position: 0px -1700px; width: 36px; height: 40px;  } 
+.flair-SS2-1626:before { background-position: 0px -1750px; width: 43px; height: 40px;  } 
+.flair-SS2-1301:before { background-position: 0 -1800px; width: 30px; height: 40px;  } 
+.flair-SS2-1302:before { background-position: 0 -1850px; width: 33px; height: 40px;  } 
+.flair-SS2-1303:before { background-position: 0 -1900px; width: 27px; height: 40px;  } 
+.flair-SS2-1304:before { background-position: 0 -1950px; width: 35px; height: 40px;  } 
+.flair-SS2-1305:before { background-position: 0 -2000px; width: 35px; height: 40px;  } 
+.flair-SS2-1306:before { background-position: 0 -2050px; width: 29px; height: 40px;  } 
+.flair-SS2-1307:before { background-position: 0 -2100px; width: 35px; height: 40px;  } 
+.flair-SS2-1308:before { background-position: 0 -2150px; width: 35px; height: 40px;  } 
+.flair-SS2-1309:before { background-position: 0 -2200px; width: 30px; height: 40px;  } 
+.flair-SS2-1310:before { background-position: 0 -2250px; width: 35px; height: 40px;  } 
+.flair-SS2-1311:before { background-position: 0 -2300px; width: 30px; height: 40px;  } 
+.flair-SS2-1312:before { background-position: 0 -2350px; width: 28px; height: 40px;  } 
+.flair-SS2-1313:before { background-position: 0 -2400px; width: 37px; height: 40px;  } 
+.flair-SS2-1314:before { background-position: 0 -2450px; width: 30px; height: 40px;  } 
+.flair-SS2-1315:before { background-position: 0 -2500px; width: 76px; height: 40px;  } 
+.flair-SS2-1316:before { background-position: 0 -2550px; width: 40px; height: 40px;  } 
+.flair-SS2-1317:before { background-position: 0 -2600px; width: 36px; height: 40px;  } 
+.flair-SS2-1318:before { background-position: 0 -2650px; width: 25px; height: 40px;  } 
+.flair-SS2-1319:before { background-position: 0 -2700px; width: 41px; height: 40px;  } 
+.flair-SS2-1320:before { background-position: 0 -2750px; width: 24px; height: 40px;  } 
+.flair-SS2-1321:before { background-position: 0 -2800px; width: 27px; height: 40px;  } 
+.flair-SS2-1322:before { background-position: 0 -2850px; width: 23px; height: 40px;  } 
+.flair-SS2-1323:before { background-position: 0 -2900px; width: 114px; height: 40px;  } 
+.flair-SS2-1324:before { background-position: 0 -2950px; width: 69px; height: 40px;  } 
+.flair-SS2-1325:before { background-position: 0 -3000px; width: 24px; height: 40px;  } 
+.flair-SS2-1326:before { background-position: 0 -3050px; width: 92px; height: 40px;  } 
+.flair-SS2-1327:before { background-position: 0 -3100px; width: 60px; height: 40px;  } 
+.flair-SS2-1328:before { background-position: 0 -3150px; width: 32px; height: 40px;  } 
+.flair-SS2-1329:before { background-position: 0 -3200px; width: 35px; height: 40px;  } 
+.flair-SS2-1330:before { background-position: 0 -3250px; width: 39px; height: 40px;  } 
+.flair-SS2-1331:before { background-position: 0 -3300px; width: 114px; height: 40px;  } 
+.flair-SS2-1332:before { background-position: 0 -3350px; width: 32px; height: 40px;  } 
+.flair-SS2-1333:before { background-position: 0 -3400px; width: 135px; height: 40px;  } 
+.flair-SS2-1334:before { background-position: 0 -3450px; width: 35px; height: 40px;  } 
+.flair-SS2-1335:before { background-position: 0 -3500px; width: 40px; height: 40px;  } 
+.flair-SS2-1336:before { background-position: 0 -3550px; width: 59px; height: 40px;  } 
+.flair-SS2-1337:before { background-position: 0 -3600px; width: 28px; height: 40px;  } 
+.flair-SS2-1338:before { background-position: 0 -3650px; width: 42px; height: 40px;  } 
+.flair-SS2-1339:before { background-position: 0 -3700px; width: 43px; height: 40px;  } 
+.flair-SS2-1340:before { background-position: 0 -3750px; width: 70px; height: 40px;  } 
+.flair-SS2-1341:before { background-position: 0 -3800px; width: 38px; height: 40px;  } 
+.flair-SS2-1342:before { background-position: 0 -3850px; width: 35px; height: 40px;  } 
+.flair-SS2-1343:before { background-position: 0 -3900px; width: 84px; height: 40px;  } 
+.flair-SS2-1344:before { background-position: 0 -3950px; width: 29px; height: 40px;  } 
+.flair-SS2-1345:before { background-position: 0 -4000px; width: 28px; height: 40px;  } 
+.flair-SS2-1346:before { background-position: 0 -4050px; width: 53px; height: 40px;  } 
+.flair-SS2-1347:before { background-position: 0 -4100px; width: 40px; height: 40px;  } 
+.flair-SS2-1348:before { background-position: 0 -4150px; width: 32px; height: 40px;  } 
+.flair-SS2-1349:before { background-position: 0 -4200px; width: 28px; height: 40px;  } 
+.flair-SS2-1350:before { background-position: 0 -4250px; width: 40px; height: 40px;  } 
+.flair-SS2-1351:before { background-position: 0 -4300px; width: 45px; height: 40px;  } 
+.flair-SS2-1352:before { background-position: 0 -4350px; width: 40px; height: 40px;  } 
+.flair-SS2-1353:before { background-position: 0 -4400px; width: 28px; height: 40px;  } 
+.flair-SS2-1354:before { background-position: 0 -4450px; width: 33px; height: 40px;  } 
+.flair-SS2-1355:before { background-position: 0 -4500px; width: 32px; height: 40px;  } 
+.flair-SS2-1356:before { background-position: 0 -4550px; width: 40px; height: 40px;  } 
+.flair-SS2-1357:before { background-position: 0 -4600px; width: 78px; height: 40px;  } 
+.flair-SS2-1358:before { background-position: 0 -4650px; width: 29px; height: 40px;  } 
+.flair-SS2-1359:before { background-position: 0 -4700px; width: 56px; height: 40px;  } 
+.flair-SS2-1360:before { background-position: 0 -4750px; width: 29px; height: 40px;  } 
+.flair-SS2-1361:before { background-position: 0 -4800px; width: 41px; height: 40px;  } 
+.flair-SS2-1362:before { background-position: 0 -4850px; width: 40px; height: 40px;  } 
+.flair-SS2-1363:before { background-position: 0 -4900px; width: 91px; height: 40px;  } 
+.flair-SS2-1364:before { background-position: 0 -4950px; width: 31px; height: 40px;  } 
+.flair-SS2-1365:before { background-position: 0 -5000px; width: 17px; height: 40px;  } 
+.flair-SS2-1366:before { background-position: 0 -5050px; width: 33px; height: 40px;  }
+.flair-SS2-1367:before { background-position: 0 -5100px; width: 40px; height: 40px;  }
+.flair-SS2-1368:before { background-position: 0 -5150px; width: 30px; height: 40px;  }
+.flair-SS2-1369:before { background-position: 0 -5200px; width: 34px; height: 40px;  }
+.flair-SS2-1370:before { background-position: 0 -5250px; width: 26px; height: 40px;  }
+.flair-SS2-1371:before { background-position: 0 -5300px; width: 36px; height: 40px;  }
+.flair-SS2-1372:before { background-position: 0 -5350px; width: 80px; height: 40px;  }
+.flair-SS2-1373:before { background-position: 0 -5400px; width: 86px; height: 40px;  }
+.flair-SS2-1374:before { background-position: 0 -5450px; width: 46px; height: 40px;  }
+.flair-SS2-1375:before { background-position: 0 -5500px; width: 31px; height: 40px;  }
+.flair-SS2-1376:before { background-position: 0 -5550px; width: 56px; height: 40px;  }
+.flair-SS2-1377:before { background-position: 0 -5600px; width: 32px; height: 40px;  }
+.flair-SS2-1378:before { background-position: 0 -5650px; width: 33px; height: 40px;  }
+.flair-SS2-1379:before { background-position: 0 -5700px; width: 45px; height: 40px;  }
+.flair-SS2-1380:before { background-position: 0 -5750px; width: 40px; height: 40px;  }
+.flair-SS2-1381:before { background-position: 0 -5800px; width: 75px; height: 40px;  }
+.flair-SS2-1382:before { background-position: 0 -5850px; width: 36px; height: 40px;  }
+.flair-SS2-1383:before { background-position: 0 -5900px; width: 29px; height: 40px;  }
+.flair-SS2-1384:before { background-position: 0 -5950px; width: 58px; height: 40px;  }
+.flair-SS2-1385:before { background-position: 0 -6000px; width: 35px; height: 40px;  }
+.flair-SS2-1386:before { background-position: 0 -6050px; width: 35px; height: 40px;  }
+.flair-SS2-1387:before { background-position: 0 -6100px; width: 79px; height: 40px;  }
+.flair-SS2-1388:before { background-position: 0 -6150px; width: 57px; height: 40px;  }
+.flair-SS2-1389:before { background-position: 0 -6200px; width: 34px; height: 40px;  }
+.flair-SS2-1390:before { background-position: 0 -6250px; width: 57px; height: 40px;  }
+.flair-SS2-1391:before { background-position: 0 -6300px; width: 63px; height: 40px;  }
+.flair-SS2-1392:before { background-position: 0 -6350px; width: 87px; height: 40px;  }
+.flair-SS2-1393:before { background-position: 0 -6400px; width: 74px; height: 40px;  }
+.flair-SS2-1394:before { background-position: 0 -6450px; width: 49px; height: 40px;  }
+.flair-SS2-1395:before { background-position: 0 -6500px; width: 103px; height: 35px; height: 40px;  }
+.flair-SS2-1396:before { background-position: 0 -6545px; width: 105px; height: 40px;  }
+.flair-SS2-1397:before { background-position: 0 -6595px; width: 34px; height: 40px;  }
+.flair-SS2-1398:before { background-position: 0 -6645px; width: 48px; height: 40px;  }
+.flair-SS2-1399:before { background-position: 0 -6695px; width: 79px; height: 40px;  }
+.flair-SS2-1451:before { background-position: 0 -6745px; width: 92px; height: 40px;  }
+.flair-SS2-1452:before { background-position: 0 -6795px; width: 40px; height: 40px;  }
+.flair-SS2-1453:before { background-position: 0 -6845px; width: 47px; height: 40px;  }
+.flair-SS2-1454:before { background-position: 0 -6895px; width: 59px; height: 40px;  }
+.flair-SS2-1455:before { background-position: 0 -6945px; width: 107px; height: 40px;  }
+.flair-SS2-1456:before { background-position: 0 -6995px; width: 91px; height: 40px;  }
+.flair-SS2-1457:before { background-position: 0 -7045px; width: 22px; height: 40px;  }
+.flair-SS2-1458:before { background-position: 0 -7095px; width: 35px; height: 40px;  }
+.flair-SS2-1459:before { background-position: 0 -7145px; width: 27px; height: 40px;  }
+.flair-SS2-1460:before { background-position: 0 -7195px; width: 39px; height: 40px;  }
+.flair-SS2-1461:before { background-position: 0 -7245px; width: 66px; height: 40px;  }
+.flair-SS2-1462:before { background-position: 0 -7295px; width: 25px; height: 40px;  }
+.flair-SS2-1463:before { background-position: 0 -7345px; width: 19px; height: 40px;  }
+.flair-SS2-1464:before { background-position: 0 -7395px; width: 36px; height: 40px;  }
+.flair-SS2-1465:before { background-position: 0 -7445px; width: 29px; height: 40px;  }
+.flair-SS2-1466:before { background-position: 0 -7495px; width: 23px; height: 40px;  }
+.flair-SS2-1467:before { background-position: 0 -7545px; width: 30px; height: 40px;  }
+.flair-SS2-1468:before { background-position: 0 -7595px; width: 51px; height: 40px;  }
+.flair-SS2-1469:before { background-position: 0 -7645px; width: 21px; height: 40px;  }
+.flair-SS2-1470:before { background-position: 0 -7695px; width: 40px; height: 40px;  }
+.flair-SS2-1471:before { background-position: 0 -7745px; width: 39px; height: 40px;  }
+.flair-SS2-1472:before { background-position: 0 -7795px; width: 74px; height: 40px;  }
+.flair-SS2-1473:before { background-position: 0 -7845px; width: 42px; height: 40px;  }
+.flair-SS2-1474:before { background-position: 0 -7895px; width: 27px; height: 40px;  }
+.flair-SS2-1475:before { background-position: 0 -7945px; width: 52px; height: 40px;  }
+.flair-SS2-1476:before { background-position: 0 -7995px; width: 108px; height: 40px;  }
+.flair-SS2-1477:before { background-position: 0 -8045px; width: 31px; height: 40px;  }
+.flair-SS2-1478:before { background-position: 0 -8095px; width: 30px; height: 40px;  }
+
+
+
+/*FANCY SIDEBAR (From /r/LAClippers)============================================================*/
+
+
+html[lang^="en"] .side .titlebox .word {
+    display: none;
+}
+html[lang^="en"] .side .titlebox .subscribers, html[lang^="en"] .side .titlebox .users-online {
+    font-size: 100%;
+    font-weight: bold;
+    color:#000066;
+    line-height: 10px;
+}
+html[lang^="en"] .side .titlebox .subscribers .number:after {
+    content: " citizens of Panic City";
+}
+html[lang^="en"] .side .titlebox .users-online .number:after {
+    content: " panicking now";
+}
+
+.titlebox .bottom {
+    border: 0
+    ;
+}
+ .titlebox form.toggle {
+    background-color: transparent;
+}
+ 
+.titlebox .usertext .md {
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+}
+ 
+.titlebox .usertext .md h2 {
+    color: #333;
+}
+
+.titlebox .usertext .md > h2 {
+    border: 0;
+    margin: 0;
+    color: #FFA500;
+    padding: 5px 10px;
+    background-color: blue;
+    padding-left: 20px;
+    padding-right: 0;
+    margin-right: -10px;
+    margin-left: -19px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    border-radius: 2px;
+    z-index: 2;
+}
+
+.titlebox .usertext .md > h2:before {
+    content: "";
+    border-color: transparent #F88017 transparent transparent;
+    border-style: solid;
+    border-width: 9px;
+    height: 0;
+    width: -5px;
+    position: absolute;
+    margin-left: -29px;
+    margin-top: 9px;
+    z-index: -1;
+}
+
+/*Second sidebar photo (From /r/LAClippers)(currently disabled)============================================================*/
+/*.titlebox .usertext-body .md::before {
+    font: normal 12px Helvetica, Arial, Verdana, sans-serif;
+    color: #000055;
+    display: block;
+    content: "";
+    background: url(%%1962nymets1%%) no-repeat center top;
+    padding-top: 50px;
+    height: 90px;
+    text-align: center;
+    padding-bottom: 20px
+    }*/
+
+
+#userbarToggle {
+  background-color: #0C4176 !important;
+  border: 1px solid #f88017 !important;
+  font-weight: bold;
+  color: #f88017 !important; 
+    box-shadow: 3px 0 3px #888!important;}
+
+/* Game Chats
+----------------------------------------------------------------------------- */
+.entry .md table {
+  width: 98%;
+}
+a[href*="/game_thread"].title:link {   color: #374699!important;
+    text-shadow: 1px 1px 0 #FF8400!important;
+ font-weight: 600 }
+a[href*="/game_thread"].title:visited {   color: #374699!important;
+text-shadow: 1px 1px 0 #FF8400!important;
+ font-weight: 600 }
+a[href*="/postgame_thread"].title:link {   color: #374699!important;
+    text-shadow: 1px 1px 0 #FF8400!important;
+ font-weight: 600 }
+a[href*="/postgame_thread"].title:visited {   color: #374699!important;
+    text-shadow: none;
+ font-weight: 600 }
+a[href*="/post_game_thread"].title:link {   color: #374699!important;
+    text-shadow: 1px 1px 0 #FF8400!important;
+ font-weight: 600 }
+a[href*="/post_game_thread"].title:visited {   color: #374699!important;
+    text-shadow: none;
+ font-weight: 600 }
+a[href*="/pregame_thread"].title:link {   color: #374699!important;
+    text-shadow: 1px 1px 0 #FF8400!important;
+ font-weight: 600 }
+a[href*="/pregame_thread"].title:visited {   color: #374699!important;
+    text-shadow: none;
+ font-weight: 600 }
+
+a[href*="/game_thread"].thumbnail.self {
+  background: transparent url(%%hi-gamethread%%) no-repeat 0 0;
+background-size:contain;
+
+}
+a[href*="/postgame_thread"].thumbnail.self {
+  background: transparent url(%%hi-gamethread%%) no-repeat 0 0;
+background-size:contain;
+
+}
+a[href*="/post_game_thread"].thumbnail.self {
+  background: transparent url(%%hi-gamethread%%) no-repeat 0 0;
+background-size:contain;
+
+}
+a[href*="/pregame_thread"].thumbnail.self {
+  background: transparent url(%%hi-gamethread%%) no-repeat 0 0;
+background-size:contain;
+
+}
+/* tmp until I do more stuff -- Agothro */
+.tagline .stickied-tagline {
+  color: #005596;
+}
+a[href="/spacer"] {
+  display: inline-block;
+  width: 1em;
+}
+
+/*================Dropdown box===============*/
+.side .md h3 + table { display: none; }
+.side .md h3:hover + table { display: table; 
+}
+.side {
+    margin: 0 10px 0 5px;
+    z-index: -100;
+    }
+.side .titlebox .md h3 + ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 2px;
+    }
+.md { overflow: visible; }
+
+
+
+/* ribbons */
+
+.titlebox .md h3, .titlebox .md h3 a, .titlebox .md h2, .titlebox .md h2 a, .titlebox .md h4, .titlebox .md h4 a {
+    color: #fff !important;
+font-weight: bold!important;
+text-shadow: none;
+box-shadow: 2px 2px 4px #888;
+    }
+.sidecontentbox a.helplink {
+    margin-right: 2px;
+    }
+.icon-menu a {
+    background: transparent;
+    }
+.titlebox .md h3 + ul {
+    display: none;
+    }
+.titlebox .md h3:hover + ul, .titlebox .md ul:hover {
+    display: block;
+    }
+/*Disabled for hover menu
+.titlebox .md ul li:hover {
+    background-color: #fff !important;
+    color: #fff!important;
+    }
+*/
+.titlebox .md h2, .titlebox .md h4 {
+  background: -webkit-linear-gradient(bottom, #0f2d49,#124f8b);
+  background: -moz-linear-gradient(bottom,#0f2d49,#124f8b);
+  background: -ms-linear-gradient(bottom,#0f2d49,#124f8b);
+  background: -o-linear-gradient(bottom,#0f2d49,#124f8b);
+    width: 287px;
+    height: 13px;
+    line-height: 10px;
+    font-weight: bold;
+    font-size: 11px;
+margin-left:0px;
+    }
+.titlebox .md h3:after, .titlebox .md h2:after, .titlebox .md h4:after {
+    margin-bottom: 10px;}
+.titlebox .md h3:before { content: "+"; color: #eee; padding-right: 2px; 
+}
+
+
+/*thumbnail img*/
+
+/*extended thumbnail margins.*/
+.thumbnail{margin-top:10px;margin-left:11px;margin-right:20px}
+
+/*Self-post Thumbnail Icon*/
+.thumbnail.self {
+height: 60px;
+background-image: url(%%hi-thumb1%%);
+background-position: center;
+background-repeat: no-repeat;
+background-size:contain;
+} 
+
+/*thumbnails shadow*/
+.thumbnail:not(.self):not(.default){
+   box-shadow: 1px 2px 2px 1px #000;
+}
+
+.thumbnail.default {
+height: 60px; /*Adjust to your Images height*/
+background: url(%%Metsthumb2%%);
+background-position: center;
+background-repeat: no-repeat;
+color: white;
+} 
+/* =================== Twitter posts */
+
+.thing .thumbnail[href*="twitter.com"],.thing .thumbnail[href*="mobile.twitter.com"]{
+height: 60px;
+width: 60px;
+
+content: url(%%hi-twitter%%)!important;
+box-shadow: 0px 0px 0px transparent;
+}
+
+/* =================== Metsblog posts */
+
+.thing .thumbnail[href*="metsblog.com"]{
+height: 60px;
+background: none!important;
+content: url(%%Metsthumb2%%)!important;
+box-shadow: 0px 0px 0px transparent;
+}
+
+/* ===== NEW NUMBER FLAIRS ====== */
+
+/* == COMPATIBILITY VERSION == */
+.flair-0:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px 0px!important; width: 45px; height: 45px;}
+.flair-00:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -45px!important; width: 45px; height: 45px;}
+.flair-1:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -90px!important; width: 45px; height: 45px;}
+.flair-2:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -135px!important; width: 45px; height: 45px;}
+.flair-3:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -180px!important; width: 45px; height: 45px;}
+.flair-4:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -225px!important; width: 45px; height: 45px;}
+.flair-5:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -270px!important; width: 45px; height: 45px;}
+.flair-6:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -315px!important; width: 45px; height: 45px;}
+.flair-7:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -360px!important; width: 45px; height: 45px;}
+.flair-8:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -405px!important; width: 45px; height: 45px;}
+.flair-9:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -450px!important; width: 45px; height: 45px;}
+.flair-10:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -495px!important; width: 45px; height: 45px;}
+.flair-11:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -540px!important; width: 45px; height: 45px;}
+.flair-12:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -585px!important; width: 45px; height: 45px;}
+.flair-13:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -630px!important; width: 45px; height: 45px;}
+.flair-14:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -675px!important; width: 45px; height: 45px;}
+.flair-15:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -720px!important; width: 45px; height: 45px;}
+.flair-16:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -765px!important; width: 45px; height: 45px;}
+.flair-17:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -810px!important; width: 45px; height: 45px;}
+.flair-18:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -855px!important; width: 45px; height: 45px;}
+.flair-19:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -900px!important; width: 45px; height: 45px;}
+.flair-20:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -945px!important; width: 45px; height: 45px;}
+.flair-21:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -990px!important; width: 45px; height: 45px;}
+.flair-22:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -1035px!important; width: 45px; height: 45px;}
+.flair-23:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -1080px!important; width: 45px; height: 45px;}
+.flair-24:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -1125px!important; width: 45px; height: 45px;}
+.flair-25:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -1170px!important; width: 45px; height: 45px;}
+.flair-26:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -1215px!important; width: 45px; height: 45px;}
+.flair-27:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -1260px!important; width: 45px; height: 45px;}
+.flair-28:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -1305px!important; width: 45px; height: 45px;}
+.flair-29:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -1350px!important; width: 45px; height: 45px;}
+.flair-29:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -1395px!important; width: 45px; height: 45px;}
+.flair-31:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -1440px!important; width: 45px; height: 45px;}
+.flair-32:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -1485px!important; width: 45px; height: 45px;}
+.flair-33:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -1530px!important; width: 45px; height: 45px;}
+.flair-34:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -1575px!important; width: 45px; height: 45px;}
+.flair-35:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -1620px!important; width: 45px; height: 45px;}
+.flair-36:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -1665px!important; width: 45px; height: 45px;}
+.flair-37:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -1710px!important; width: 45px; height: 45px;}
+.flair-38:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -1755px!important; width: 45px; height: 45px;}
+.flair-39:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -1800px!important; width: 45px; height: 45px;}
+.flair-40:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -1845px!important; width: 45px; height: 45px;}
+.flair-41:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -1890px!important; width: 45px; height: 45px;}
+.flair-42:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -1935px!important; width: 45px; height: 45px;}
+.flair-43:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -1980px!important; width: 45px; height: 45px;}
+.flair-44:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -2025px!important; width: 45px; height: 45px;}
+.flair-45:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -2070px!important; width: 45px; height: 45px;}
+.flair-46:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -2115px!important; width: 45px; height: 45px;}
+.flair-47:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -2160px!important; width: 45px; height: 45px;}
+.flair-48:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -2205px!important; width: 45px; height: 45px;}
+.flair-49:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -2250px!important; width: 45px; height: 45px;}
+.flair-50:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -2295px!important; width: 45px; height: 45px;}
+.flair-51:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -2340px!important; width: 45px; height: 45px;}
+.flair-52:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -2385px!important; width: 45px; height: 45px;}
+.flair-53:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -2430px!important; width: 45px; height: 45px;}
+.flair-54:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -2475px!important; width: 45px; height: 45px;}
+.flair-55:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -2520px!important; width: 45px; height: 45px;}
+.flair-56:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -2565px!important; width: 45px; height: 45px;}
+.flair-57:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -2610px!important; width: 45px; height: 45px;}
+.flair-58:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -2655px!important; width: 45px; height: 45px;}
+.flair-59:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -2700px!important; width: 45px; height: 45px;}
+.flair-60:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -2745px!important; width: 45px; height: 45px;}
+.flair-61:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -2790px!important; width: 45px; height: 45px;}
+.flair-62:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -2835px!important; width: 45px; height: 45px;}
+.flair-63:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -2880px!important; width: 45px; height: 45px;}
+.flair-64:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -2925px!important; width: 45px; height: 45px;}
+.flair-65:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -2970px!important; width: 45px; height: 45px;}
+.flair-66:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -3015px!important; width: 45px; height: 45px;}
+.flair-67:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -3060px!important; width: 45px; height: 45px;}
+.flair-68:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -3105px!important; width: 45px; height: 45px;}
+.flair-69:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -3150px!important; width: 45px; height: 45px;}
+.flair-70:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -3195px!important; width: 45px; height: 45px;}
+.flair-70:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -3240px!important; width: 45px; height: 45px;}
+.flair-70:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -3285px!important; width: 45px; height: 45px;}
+.flair-71:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -3330px!important; width: 45px; height: 45px;}
+.flair-72:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -3375px!important; width: 45px; height: 45px;}
+.flair-74:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -3420px!important; width: 45px; height: 45px;}
+.flair-75:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -3465px!important; width: 45px; height: 45px;}
+.flair-76:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -3510px!important; width: 45px; height: 45px;}
+.flair-77:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -3600px!important; width: 45px; height: 45px;}
+.flair-78:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -3645px!important; width: 45px; height: 45px;}
+.flair-79:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -3690px!important; width: 45px; height: 45px;}
+.flair-80:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -3735px!important; width: 45px; height: 45px;}
+.flair-81:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -3780px!important; width: 45px; height: 45px;}
+.flair-82:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -3825px!important; width: 45px; height: 45px;}
+.flair-83:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -3870px!important; width: 45px; height: 45px;}
+.flair-84:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -3915px!important; width: 45px; height: 45px;}
+.flair-85:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -3960px!important; width: 45px; height: 45px;}
+.flair-86:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -4005px!important; width: 45px; height: 45px;}
+.flair-87:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -4050px!important; width: 45px; height: 45px;}
+.flair-88:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -4095px!important; width: 45px; height: 45px;}
+.flair-89:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -4140px!important; width: 45px; height: 45px;}
+.flair-90:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -4185px!important; width: 45px; height: 45px;}
+.flair-91:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -4230px!important; width: 45px; height: 45px;}
+.flair-92:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -4275px!important; width: 45px; height: 45px;}
+.flair-93:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -4320px!important; width: 45px; height: 45px;}
+.flair-94:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -4365px!important; width: 45px; height: 45px;}
+.flair-95:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -4410px!important; width: 45px; height: 45px;}
+.flair-96:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -4455px!important; width: 45px; height: 45px;}
+.flair-97:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -4500px!important; width: 45px; height: 45px;}
+.flair-98:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -4545px!important; width: 45px; height: 45px;}
+.flair-99:before {background:url(%%hi-flair-num%%); background-size: 45px 4545px;background-position: 0px -4590px!important; width: 45px; height: 45px;}
+
+
+
+
+/* ROSTER FACE FLAIRS */
+.flair-hi-alvarez:before {background:url(%%hi-roster%%);  background-size: 35.5px 2621.5px;background-position: 0px 0px!important; width: 35.5px; height: 53.5px;}
+.flair-hi-black:before {background:url(%%hi-roster%%);    background-size: 35.5px 2621.5px;background-position: 0px -53.5px!important; width: 35.5px; height: 53.5px;}
+.flair-hi-blevins:before {background:url(%%hi-roster%%);   background-size: 35.5px 2621.5px;background-position: 0px -107px!important; width: 35.5px; height: 53.5px;}
+.flair-hi-campbell:before {background:url(%%hi-roster%%);    background-size: 35.5px 2621.5px;background-position: 0px -160.5px!important; width: 35.5px; height: 53.5px;}
+.flair-hi-carlyle:before {background:url(%%hi-roster%%);   background-size: 35.5px 2621.5px;background-position: 0px -214px!important; width: 35.5px; height: 53.5px;}
+.flair-hi-ceciliani:before {background:url(%%hi-roster%%); background-size: 35.5px 2621.5px;background-position: 0px -267.5px!important; width: 35.5px; height: 53.5px;}
+.flair-hi-cespedes:before {background:url(%%hi-roster%%); background-size: 35.5px 2621.5px;background-position: 0px -321px!important; width: 35.5px; height: 53.5px;}
+.flair-hi-clippard:before {background:url(%%hi-roster%%); background-size: 35.5px 2621.5px;background-position: 0px -374.5px!important; width: 35.5px; height: 53.5px;}
+.flair-hi-colon:before {background:url(%%hi-roster%%); background-size: 35.5px 2621.5px;background-position: 0px -428px!important; width: 35.5px; height: 53.5px;}
+.flair-hi-conforto:before {background:url(%%hi-roster%%); background-size: 35.5px 2621.5px;background-position: 0px -481.5px!important; width: 35.5px; height: 53.5px;}
+.flair-hi-cuddyer:before {background:url(%%hi-roster%%); background-size: 35.5px 2621.5px;background-position: 0px -535px!important; width: 35.5px; height: 53.5px;}
+.flair-hi-darnaud:before {background:url(%%hi-roster%%); background-size: 35.5px 2621.5px;background-position: 0px -588.5px!important; width: 35.5px; height: 53.5px;}
+.flair-hi-degrom:before {background:url(%%hi-roster%%); background-size: 35.5px 2621.5px;background-position: 0px -642px!important; width: 35.5px; height: 53.5px;}
+.flair-hi-duda:before {background:url(%%hi-roster%%); background-size: 35.5px 2621.5px;background-position: 0px -695.5px!important; width: 35.5px; height: 53.5px;}
+.flair-hi-edgin:before {background:url(%%hi-roster%%); background-size: 35.5px 2621.5px;background-position: 0px -749px!important; width: 35.5px; height: 53.5px;}
+.flair-hi-familia:before {background:url(%%hi-roster%%); background-size: 35.5px 2621.5px;background-position: 0px -802.5px!important; width: 35.5px; height: 53.5px;}
+.flair-hi-flores:before {background:url(%%hi-roster%%); background-size: 35.5px 2621.5px;background-position: 0px -856px!important; width: 35.5px; height: 53.5px;}
+.flair-hi-gilmartin:before {background:url(%%hi-roster%%); background-size: 35.5px 2621.5px;background-position: 0px -909.5px!important; width: 35.5px; height: 53.5px;}
+.flair-hi-goeddel:before {background:url(%%hi-roster%%); background-size: 35.5px 2621.5px;background-position: 0px -963px!important; width: 35.5px; height: 53.5px;}
+.flair-hi-granderson:before {background:url(%%hi-roster%%); background-size: 35.5px 2621.5px;background-position: 0px -1016.5px!important; width: 35.5px; height: 53.5px;}
+.flair-hi-harvey:before {background:url(%%hi-roster%%); background-size: 35.5px 2621.5px;background-position: 0px -1070px!important; width: 35.5px; height: 53.5px;}
+.flair-hi-herrera:before {background:url(%%hi-roster%%);background-size: 35.5px 2621.5px;background-position: 0px -1123.5px!important; width: 35.5px; height: 53.5px;}
+.flair-hi-johnson:before {background:url(%%hi-roster%%); background-size: 35.5px 2621.5px;background-position: 0px -1177px!important; width: 35.5px; height: 53.5px;}
+.flair-hi-lagares:before {background:url(%%hi-roster%%); background-size: 35.5px 2621.5px;background-position: 0px -1230.5px!important; width: 35.5px; height: 53.5px;}
+.flair-hi-leathersich:before {background:url(%%hi-roster%%); background-size: 35.5px 2621.5px;background-position: 0px -1284px!important; width: 35.5px; height: 53.5px;}
+.flair-hi-matz:before {background:url(%%hi-roster%%); background-size: 35.5px 2621.5px;background-position: 0px -1337.5px!important; width: 35.5px; height: 53.5px;}
+.flair-hi-mejia:before {background:url(%%hi-roster%%); background-size: 35.5px 2621.5px;background-position: 0px -1391px!important; width: 35.5px; height: 53.5px;}
+.flair-hi-monell:before {background:url(%%hi-roster%%); background-size: 35.5px 2621.5px;background-position: 0px -1444.5px!important; width: 35.5px; height: 53.5px;}
+.flair-hi-montero:before {background:url(%%hi-roster%%); background-size: 35.5px 2621.5px;background-position: 0px -1498px!important; width: 35.5px; height: 53.5px;}
+.flair-hi-morris:before {background:url(%%hi-roster%%); background-size: 35.5px 2621.5px;background-position: 0px -1552px!important; width: 35.5px; height: 53.5px;}
+.flair-hi-muno:before {background:url(%%hi-roster%%); background-size: 35.5px 2621.5px;background-position: 0px -1605px!important; width: 35.5px; height: 53.5px;}
+.flair-hi-murphy:before {background:url(%%hi-roster%%); background-size: 35.5px 2621.5px;background-position: 0px -1658.5px!important; width: 35.5px; height: 53.5px;}
+.flair-hi-niese:before {background:url(%%hi-roster%%); background-size: 35.5px 2621.5px;background-position: 0px -1712px!important; width: 35.5px; height: 53.5px;}
+.flair-hi-nieuwenhuis:before {background:url(%%hi-roster%%); background-size: 35.5px 2621.5px;background-position: 0px -1766px!important; width: 35.5px; height: 53.5px;}
+.flair-hi-parnell:before {background:url(%%hi-roster%%); background-size: 35.5px 2621.5px;background-position: 0px -1819px!important; width: 35.5px; height: 53.5px;}
+.flair-hi-plawecki:before {background:url(%%hi-roster%%); background-size: 35.5px 2621.5px;background-position: 0px -1873.5px!important; width: 35.5px; height: 53.5px;}
+.flair-hi-puello:before {background:url(%%hi-roster%%); background-size: 35.5px 2621.5px;background-position: 0px -1926px!important; width: 35.5px; height: 53.5px;}
+.flair-hi-recker:before {background:url(%%hi-roster%%); background-size: 35.5px 2621.5px;background-position: 0px -1979.5px!important; width: 35.5px; height: 53.5px;}
+.flair-hi-robles:before {background:url(%%hi-roster%%); background-size: 35.5px 2621.5px;background-position: 0px -2033px!important; width: 35.5px; height: 53.5px;}
+.flair-hi-syndergaard:before {background:url(%%hi-roster%%); background-size: 35.5px 2621.5px;background-position: 0px -2086.5px!important; width: 35.5px; height: 53.5px;}
+.flair-hi-tejada:before {background:url(%%hi-roster%%); background-size: 35.5px 2621.5px;background-position: 0px -2140px!important; width: 35.5px; height: 53.5px;}
+.flair-hi-torresa:before {background:url(%%hi-roster%%); background-size: 35.5px 2621.5px;background-position: 0px -2193.5px!important; width: 35.5px; height: 53.5px;}
+.flair-hi-torresc:before {background:url(%%hi-roster%%); background-size: 35.5px 2621.5px;background-position: 0px -2247px!important; width: 35.5px; height: 53.5px;}
+.flair-hi-tovar:before {background:url(%%hi-roster%%); background-size: 35.5px 2621.5px;background-position: 0px -2300.5px!important; width: 35.5px; height: 53.5px;}
+.flair-hi-uribe:before {background:url(%%hi-roster%%); background-size: 35.5px 2621.5px;background-position: 0px -2354px!important; width: 35.5px; height: 53.5px;}
+.flair-hi-verrett:before {background:url(%%hi-roster%%); background-size: 35.5px 2621.5px;background-position: 0px -2407.5px!important; width: 35.5px; height: 53.5px;}
+.flair-hi-wheeler:before {background:url(%%hi-roster%%); background-size: 35.5px 2621.5px;background-position: 0px -2461px!important; width: 35.5px; height: 53.5px;}
+.flair-hi-wright:before {background:url(%%hi-roster%%); background-size: 35.5px 2621.5px;background-position: 0px -2515.5px!important; width: 35.5px; height: 53.5px;}
+.flair-hi-ynoa:before {background:url(%%hi-roster%%); background-size: 35.5px 2621.5px;background-position: 0px -2568px!important; width: 35.5px; height: 53.5px;}
